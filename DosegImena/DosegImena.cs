@@ -17,9 +17,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             string a = "Lokalna varijabla";
 
-            // TODO:010 Ispisati vrijednosti lokalne varijable a
             Console.WriteLine(a);
-            // TODO:011 Ispisati vrijednost člana klase a
             Console.WriteLine(this.a);
             {
 
