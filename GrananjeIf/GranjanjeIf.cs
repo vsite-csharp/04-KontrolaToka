@@ -34,12 +34,12 @@ namespace Vsite.CSharp.KontrolaToka
 
             // 2. provjeriti je li broj djeljiv s 3. 
             //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 3", a inače će
-            if (broj % 3 == 0)
+            else if (broj % 3 == 0)
                 Console.WriteLine("broj je djeljiv s 3");
 
             // 3. provjeriti je li broj djeljiv s 5. 
             //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 5", a inače
-            if (broj % 5 == 0)
+            else if (broj % 5 == 0)
                 Console.WriteLine("broj je djeljiv s 5");
 
             // 4. treba ispisati "broj nije djeljiv s 2, 3 niti 5"
