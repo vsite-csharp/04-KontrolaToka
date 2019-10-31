@@ -26,7 +26,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static void ProvjeriDjeljivost(int broj)
         {
-            // TODO:020 Napisati grananja if koja će za uneseni broj:
             // 1. provjeriti je li broj paran. 
             if (broj % 2 == 0)
             {
