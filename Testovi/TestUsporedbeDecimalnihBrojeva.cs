@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.KontrolaToka.Testovi
+﻿namespace Vsite.CSharp.KontrolaToka.Testovi
 {
     [TestClass]
     public class TestUsporedbeDecimalnihBrojeva

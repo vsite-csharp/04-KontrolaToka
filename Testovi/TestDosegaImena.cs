@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.KontrolaToka.Testovi
+﻿namespace Vsite.CSharp.KontrolaToka.Testovi
 {
     [TestClass]
     public class TestDosegaImena : ConsoleTest
@@ -11,8 +8,8 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         {
             DosegImena p = new DosegImena();
             p.IspišiAove();
-            Assert.AreEqual("Lokalna varijabla", cw.GetString());
-            Assert.AreEqual("Član klase", cw.GetString());
+            Assert.AreEqual("Lokalna varijabla", cw?.GetString());
+            Assert.AreEqual("Član klase", cw?.GetString());
         }
     }
 }

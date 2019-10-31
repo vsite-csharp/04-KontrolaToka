@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Linq;
-
-namespace Vsite.CSharp.KontrolaToka.Testovi
+﻿namespace Vsite.CSharp.KontrolaToka.Testovi
 {
     [TestClass]
     public class TestYield

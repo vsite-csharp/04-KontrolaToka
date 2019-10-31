@@ -27,6 +27,7 @@
     <ProjectReference Include="..\NulStapajuciOperator\NulStapajućiOperator.csproj" />
     <ProjectReference Include="..\NulUvjetniOperator\NulUvjetniOperator.csproj" />
     <ProjectReference Include="..\PetljeWhileDoWhile\PetljeWhileDoWhile.csproj" />
+    <ProjectReference Include="..\SwitchSObrascima\GrananjeSwitchSObrascima.csproj" />
     <ProjectReference Include="..\UsporedbeDecimalnihBrojeva\UsporedbeDecimalnihBrojeva.csproj" />
     <ProjectReference Include="..\UvjetnoPridruzivanje\UvjetnoPridruživanje.csproj" />
     <ProjectReference Include="..\Yield\Yield.csproj" />

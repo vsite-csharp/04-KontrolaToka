@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.KontrolaToka.Testovi
+﻿namespace Vsite.CSharp.KontrolaToka.Testovi
 {
     [TestClass]
     public class TestNulStapajućegOperatora : ConsoleTest
@@ -10,15 +8,15 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         {
             string ime = "Pero";
             NulStapajućiOperator.IspišiString(ime);
-            Assert.AreEqual("Pero", cw.GetString());
+            Assert.AreEqual("Pero", cw?.GetString());
         }
 
         [TestMethod]
         public void IspišiStringZaNulStringIspisujeNedefiniran()
         {
-            string ime = null;
+            string? ime = null;
             NulStapajućiOperator.IspišiString(ime);
-            Assert.AreEqual("Nedefiniran", cw.GetString());
+            Assert.AreEqual("Nedefiniran", cw?.GetString());
         }
 
         [TestMethod]
@@ -26,7 +24,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         {
             int broj = 54;
             NulStapajućiOperator.IspišiString(broj);
-            Assert.AreEqual("54", cw.GetString());
+            Assert.AreEqual("54", cw?.GetString());
         }
 
         [TestMethod]
@@ -34,7 +32,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         {
             double? broj = null;
             NulStapajućiOperator.IspišiString(broj);
-            Assert.AreEqual("Nedefiniran", cw.GetString());
+            Assert.AreEqual("Nedefiniran", cw?.GetString());
         }
     }
 }

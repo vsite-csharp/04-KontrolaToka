@@ -1,10 +1,4 @@
-﻿using System;
-using System.Text;
-using System.Collections.Generic;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Vsite.CSharp.KontrolaToka;
-
-namespace Vsite.CSharp.KontrolaToka.Testovi
+﻿namespace Vsite.CSharp.KontrolaToka.Testovi
 {
     [TestClass]
     public class TestPetljeWhileDoWhile : ConsoleTest
@@ -13,10 +7,10 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         public void BrojBacanjaDoBačeneŠestice()
         {
             PetljeWhileDoWhile.BrojBacanjaDoBačeneŠestice();
-            Assert.IsFalse(cw.IsEmpty); // barem jedno bacanje!
+            Assert.IsFalse(cw?.IsEmpty); // barem jedno bacanje!
 
             int n = 1;
-            while (!cw.IsEmpty)
+            while (!cw!.IsEmpty)
             {
                 string unos = cw.GetString();
                 string početak = $"{n}. pokušaj: ";
@@ -34,9 +28,9 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
             int početno = 5;
             int ukupno = PetljeWhileDoWhile.BacajDokNeProđe12Polja(početno);
             Assert.IsTrue(ukupno >= 12 && ukupno < 18);
-            Assert.IsFalse(cw.IsEmpty);
+            Assert.IsFalse(cw?.IsEmpty);
 
-            while (!cw.IsEmpty)
+            while (!(cw!.IsEmpty))
             {
                 string unos = cw.GetString();
                 Assert.IsTrue(unos.StartsWith("Bacanje: "));
@@ -55,10 +49,10 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         public void BacajDokNeProđe12PoljaJePrazanZa12iliViše()
         {
             Assert.AreEqual(12, PetljeWhileDoWhile.BacajDokNeProđe12Polja(12));
-            Assert.IsTrue(cw.IsEmpty); // ne smije biti niti jedno bacanje!
+            Assert.IsTrue(cw?.IsEmpty); // ne smije biti niti jedno bacanje!
 
             Assert.AreEqual(16, PetljeWhileDoWhile.BacajDokNeProđe12Polja(16));
-            Assert.IsTrue(cw.IsEmpty); // ne smije biti niti jedno bacanje!
+            Assert.IsTrue(cw?.IsEmpty); // ne smije biti niti jedno bacanje!
         }
     }
 }

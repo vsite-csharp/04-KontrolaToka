@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Linq;
-
-namespace Vsite.CSharp.KontrolaToka.Testovi
+﻿namespace Vsite.CSharp.KontrolaToka.Testovi
 {
     [TestClass]
     public class TestBeskonačniNizYield
@@ -16,7 +12,9 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
             // provjera da rezultat nije neka kolekcija
             Assert.IsTrue(beskonačniNiz.GetType().GetProperty("Count") == null && beskonačniNiz.GetType().GetProperty("Length") == null);
             for (int i = 0; i < 1000; ++i)
+            {
                 Assert.AreEqual(slučajni.NextDouble(), beskonačniNiz.ElementAt(i));
+            }
         }
     }
 }
