@@ -21,7 +21,7 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine(a);
             Console.WriteLine(this.a);
             {
-                // TODO:012 Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
+                // todo:012 definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
                 //int a = 5;
             }
         }
