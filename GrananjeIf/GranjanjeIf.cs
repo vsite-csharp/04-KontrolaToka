@@ -26,7 +26,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static void ProvjeriDjeljivost(int broj)
         {
-            // TODO:020 Napisati grananja if koja će za uneseni broj:
             // 1. provjeriti je li broj paran
             if (broj % 2 == 0) { Console.WriteLine("broj je djeljiv s 2"); }
             //    Ako je broj paran, treba ispisati poruku "broj je djeljiv s 2", a inače će
@@ -39,7 +38,7 @@ namespace Vsite.CSharp.KontrolaToka
 
             //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 5", a inače
             // 4. treba ispisati "broj nije djeljiv s 2, 3 niti 5"
-            else{Console.WriteLine("broj nije djeljiv s 2, 3 niti 5"); }
+            else{Console.WriteLine("broj nije djeljiv s 2, 3 n"); }
 
         }
     }
