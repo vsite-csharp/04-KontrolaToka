@@ -6,12 +6,15 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void PetljaFor(int n)
         {
-            // TODO:080 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+            for (int i = 0; i <= n; ++i)
+                Console.WriteLine(i);
         }
 
         public static void PetljaWhile(int n)
         {
-            // TODO:081 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            int i = 0;
+            while ( n > i++)
+                Console.WriteLine(i);
         }
 
         static void Main(string[] args)
@@ -20,7 +23,7 @@ namespace Vsite.CSharp.KontrolaToka
 
             PetljaWhile(10);
 
-            // TODO:082 Prevesti program te programom ILDasm usporediti međukod gornjih metoda
+            //ako sam dobro vidio, međukod je isti u ildasm
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
