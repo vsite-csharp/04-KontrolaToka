@@ -9,11 +9,11 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         public void GrananjeIf_ZaBrojDjeljivS_2()
         {
             GranjanjeIf.ProvjeriDjeljivost(2);
-            Assert.AreEqual("broj je djeljiv s 2", cw.GetString());
+            Assert.AreEqual("Broj je djeljiv s 2", cw.GetString());
             GranjanjeIf.ProvjeriDjeljivost(4);
-            Assert.AreEqual("broj je djeljiv s 2", cw.GetString());
+            Assert.AreEqual("Broj je djeljiv s 2", cw.GetString());
             GranjanjeIf.ProvjeriDjeljivost(6);
-            Assert.AreEqual("broj je djeljiv s 2", cw.GetString());
+            Assert.AreEqual("Broj je djeljiv s 2", cw.GetString());
         }
 
         [TestMethod]
