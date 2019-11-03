@@ -12,11 +12,22 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (danUTjednu)
             {
-                // TODO:070 Napisati grane case za svaki dan u tjednu tako da vraćaju "ponedjeljak" za DayOfWeek.Monday, "utorak" za DayOfWeek.Tuesday itd.
-
-                // TODO:071 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
+                case DayOfWeek.Monday:
+                    return "ponedjeljak";
+                case DayOfWeek.Tuesday:
+                    return "utorak";
+                case DayOfWeek.Wednesday:
+                    return "srijeda";
+                case DayOfWeek.Thursday:
+                    return "četvrtak";
+                case DayOfWeek.Friday:
+                    return "petak";
+                case DayOfWeek.Saturday:
+                    return "subota";
+                case DayOfWeek.Sunday:
+                    return "nedjelja";
                 default:
-                    throw new NotImplementedException();
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
@@ -24,11 +35,22 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (danUTjednu)
             {
-                // TODO:072 Napisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
-
-                // TODO:073 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
+                case DayOfWeek.Monday:
+                    return "radni dan";
+                case DayOfWeek.Tuesday:
+                    return "radni dan";
+                case DayOfWeek.Wednesday:
+                    return "radni dan";
+                case DayOfWeek.Thursday:
+                    return "radni dan";
+                case DayOfWeek.Friday:
+                    return "radni dan";
+                case DayOfWeek.Saturday:
+                    return "vikend";
+                case DayOfWeek.Sunday:
+                    return "vikend";
                 default:
-                    throw new NotImplementedException();
+                    throw new ArgumentOutOfRangeException();
             }
         }
     }
