@@ -9,7 +9,7 @@ namespace Vsite.CSharp.KontrolaToka
         public static string PozoviToString(object obj)
         {
             // TODO:060 Korištenjem nul-uvjetnog (null conditional) operatora ?. vratiti rezultat metode ToString na prosljeđenom objektu ako je različit od nule, u protivnom vratiti nul-referencu
-
+            return obj?.ToString();
             throw new NotImplementedException();
         }
 
