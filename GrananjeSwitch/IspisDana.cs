@@ -12,11 +12,36 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (danUTjednu)
             {
-                // TODO:070 Napisati grane case za svaki dan u tjednu tako da vraćaju "ponedjeljak" za DayOfWeek.Monday, "utorak" za DayOfWeek.Tuesday itd.
-
-                // TODO:071 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
+                case DayOfWeek.Monday:
+                {
+                    return "Monday";
+                }
+                case DayOfWeek.Tuesday:
+                {
+                    return "Tuesday";
+                }
+                case DayOfWeek.Wednesday:
+                {
+                    return "Wednesday";
+                }
+                case DayOfWeek.Thursday:
+                {
+                    return "Thursday";
+                }
+                case DayOfWeek.Friday:
+                {
+                    return "Friday";
+                }
+                case DayOfWeek.Saturday:
+                {
+                    return "Saturday";
+                }
+                case DayOfWeek.Sunday:
+                {
+                    return "Sunday";
+                }
                 default:
-                    throw new NotImplementedException();
+                    throw new ArgumentOutOfRangeException("Value is not good");
             }
         }
 
@@ -24,11 +49,17 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (danUTjednu)
             {
-                // TODO:072 Napisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
-
-                // TODO:073 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
+                case DayOfWeek.Saturday:
+                case DayOfWeek.Sunday:
+                    return "vikend";
+                case DayOfWeek.Monday:
+                case DayOfWeek.Tuesday:
+                case DayOfWeek.Wednesday:
+                case DayOfWeek.Thursday:
+                case DayOfWeek.Friday:
+                    return "radni dan";
                 default:
-                    throw new NotImplementedException();
+                    throw new ArgumentOutOfRangeException("Value is not good");
             }
         }
     }
