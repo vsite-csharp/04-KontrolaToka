@@ -12,7 +12,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static void PetljaWhile(int n)
         {
-            // TODO:081 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
             int i = 0;
             while (i<= n)
             {
