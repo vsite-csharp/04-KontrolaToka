@@ -24,7 +24,7 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return Math.Round(broj1, 4) == Math.Round(broj2, 4);
+            return Math.Round(broj1, 6) == Math.Round(broj2, 6);
         }
     }
 }
