@@ -49,7 +49,14 @@ namespace Vsite.CSharp.KontrolaToka
                 int zbroj = prethodni + trenutni;
                 prethodni = trenutni;
                 trenutni = zbroj;
-                rezultat.Add(trenutni);
+                try
+                {
+                    rezultat.Add(trenutni);
+                }
+                catch(OverflowException e )
+                {
+                    break;
+                }
             }
             return rezultat;
         }
@@ -57,7 +64,27 @@ namespace Vsite.CSharp.KontrolaToka
         // TODO:131 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+
+            IList<int> rezultat = new List<int>();
+            rezultat.Add(0);
+            rezultat.Add(1);
+            int prethodni = 0;
+            int trenutni = 1;
+            while (prethodni < int.MaxValue / 2)
+            {
+                int zbroj = prethodni + trenutni;
+                prethodni = trenutni;
+                trenutni = zbroj;
+                try
+                {
+                    rezultat.Add(trenutni);
+                }
+                catch (OverflowException e)
+                {
+                    break;
+                }
+            }
+            return rezultat;
         }
     }
 }

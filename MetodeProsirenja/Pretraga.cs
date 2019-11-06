@@ -29,7 +29,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
-            // TODO:122 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
             IList<string> output = new List<string>();
             foreach(string word in nizRiječi)
             {
