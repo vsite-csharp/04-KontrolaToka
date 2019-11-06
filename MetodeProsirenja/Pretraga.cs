@@ -11,7 +11,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             foreach(string target in nizRiječi)
             {
-                if (target.Equals(nizRiječi))
+                if (string.Equals(target,tražena))
                     return true;
             }
             return false;
@@ -30,8 +30,13 @@ namespace Vsite.CSharp.KontrolaToka
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
             // TODO:122 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
-
-            throw new NotImplementedException();
+            IList<string> output = new List<string>();
+            foreach(string word in nizRiječi)
+            {
+                if (string.Compare(word,graničnaRiječ) > 0)
+                    output.Add(word);
+            }
+            return output;
         }
     }
 }
