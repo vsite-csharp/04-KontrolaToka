@@ -74,7 +74,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
 
             Random slučajni = new Random(klica);
-            while(true)
+            while (true)
                 yield return slučajni.NextDouble();
         }
 }

@@ -42,34 +42,46 @@ namespace Vsite.CSharp.KontrolaToka
 
             int prethodni = 0;
             int trenutni = 1;
-            while (prethodni < int.MaxValue / 2)
+            while (true)
             {
-                int zbroj = prethodni + trenutni;
-                prethodni = trenutni;
-                trenutni = zbroj;
                 try
                 {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;               
                     rezultat.Add(trenutni);
                 }
                 catch(OverflowException e )
                 {
                     break;
-                }
+                }                
             }
             return rezultat;
         }
 
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-           int prev = -1;
+           yield return 0;
+           yield return 1;
+
+           int prev = 0;
            int next = 1;
+
            while(true)
            {
-                int sum = prev + next;
-                prev = next;
-                next = sum;
-                yield return sum;
+                try
+                {
+                    int sum = prev + next;
+                    prev = next;
+                    next = sum;
+                }
+                catch(OverflowException e)
+                {
+                    break;
+                }
+                yield return next;
            }
+            yield break;
         }
     }
 }

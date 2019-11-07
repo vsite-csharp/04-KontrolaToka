@@ -15,7 +15,7 @@ namespace Vsite.CSharp.KontrolaToka
                 ++brojBacanja;
                 bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine("{0}. pokušaj: {1}", brojBacanja, bacanje);
-            } while (bacanje != 6);
+            }while (bacanje != 6);
 
             return brojBacanja;
         }
