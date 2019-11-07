@@ -12,31 +12,32 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (danUTjednu)
             {
-                // TODO:070 Napisati grane case za svaki dan u tjednu tako da vraćaju "ponedjeljak" za DayOfWeek.Monday, "utorak" za DayOfWeek.Tuesday itd.
-        //        case DayOfWeek.Monday:
-                    
-        //            return "ponedjeljak";
-                    
-        //        case DayOfWeek.Tuesday:
-        //            return "utorak";
+                case DayOfWeek.Monday:
 
-        //        case DayOfWeek.Wednesday:
-        //            return "srijeda";
+                    return "ponedjeljak";
 
-        //        case DayOfWeek.Thursday:
-        //            return "cetvrtak";
+                case DayOfWeek.Tuesday:
+                    return "utorak";
 
-        //        case DayOfWeek.Friday:
-        //            return "petak";
+                case DayOfWeek.Wednesday:
+                    return "srijeda";
 
-        //        case DayOfWeek.Saturday:
-        //            return "subota";
+                case DayOfWeek.Thursday:
+                    return "četvrtak";
 
-        //        case DayOfWeek.Sunday:
-        //            return "nedjelja";
+                case DayOfWeek.Friday:
+                    return "petak";
 
-        //        // TODO:071 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
-               default:
+                case DayOfWeek.Saturday:
+                    return "subota";
+
+                case DayOfWeek.Sunday:
+                    return "nedjelja";
+
+                
+
+                default:
+                  throw new ArgumentOutOfRangeException();
                   throw new NotImplementedException();
             }
         }
@@ -45,10 +46,29 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (danUTjednu)
             {
-                // TODO:072 Napisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
+                case DayOfWeek.Monday:
 
-                // TODO:073 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
+                    return "radni dan";
+
+                case DayOfWeek.Tuesday:
+                    return "radni dan";
+
+                case DayOfWeek.Wednesday:
+                    return "radni dan";
+
+                case DayOfWeek.Thursday:
+                    return "radni dan";
+
+                case DayOfWeek.Friday:
+                    return "radni dan";
+
+                case DayOfWeek.Saturday:
+                    return "vikend";
+
+                case DayOfWeek.Sunday:
+                    return "vikend";
                 default:
+                    throw new ArgumentOutOfRangeException();
                     throw new NotImplementedException();
             }
         }

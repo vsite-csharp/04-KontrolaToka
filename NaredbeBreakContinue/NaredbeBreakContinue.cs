@@ -10,6 +10,7 @@ namespace Vsite.CSharp.KontrolaToka
             for (int i = 1; i <= n; ++i)
             {
                 // TODO:100 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+               
 
                 zbroj += i;
             }
@@ -22,12 +23,10 @@ namespace Vsite.CSharp.KontrolaToka
             for (int i = 1; i <= n; ++i)
             {
                 // TODO:101 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+               
+                    // TODO:102 Ako je i djeljiv sa d2, tada treba prekinuti petlju
 
-
-                // TODO:102 Ako je i djeljiv sa d2, tada treba prekinuti petlju
-
-
-                zbroj += i;
+                    zbroj += i;
             }
             return zbroj;
         }

@@ -28,7 +28,6 @@ namespace Vsite.CSharp.KontrolaToka
 
             PetljaWhile(10);
 
-            // TODO:082 Prevesti program te programom ILDasm usporediti međukod gornjih metoda
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
