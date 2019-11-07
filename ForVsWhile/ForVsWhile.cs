@@ -11,7 +11,12 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static void PetljaWhile(int n)
         {
-            // TODO:081 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            Random rand = new Random();
+            int a = 0;
+            while ((a=rand.Next(5))!=0)
+            {
+                Console.WriteLine("a");
+            }
         }
 
         static void Main(string[] args)
