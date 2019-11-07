@@ -27,6 +27,11 @@ namespace Vsite.CSharp.KontrolaToka
 
             // TODO:091 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
 
+
+            do
+            {
+
+
             {
                 int bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"Bacanje: {bacanje}");
@@ -34,6 +39,9 @@ namespace Vsite.CSharp.KontrolaToka
                 Console.WriteLine($"Ukupno: {brojPređenihPolja}");
             }
             return brojPređenihPolja;
+
+            } while (brojPređenihPolja<12);
+
         }
 
         static void Main(string[] args)
