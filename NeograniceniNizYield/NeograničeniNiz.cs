@@ -20,6 +20,7 @@ namespace Vsite.CSharp.KontrolaToka
         private static void RandomSKlicom()
         {
             // primjer korištenja klase Random sa zadanom klicom
+            //ONDA SE BROJEVI PONAVLJAJU
             Console.WriteLine($"Niz brojeva koje klasa Random generira s klicom {klica}:");
             Random slučajni = new Random(klica);
             for (int i = 0; i < granica; ++i)
