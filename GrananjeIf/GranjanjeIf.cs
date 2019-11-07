@@ -28,19 +28,19 @@ namespace Vsite.CSharp.KontrolaToka
         {
             if(broj % 2 == 0)
             {
-                Console.WriteLine("Broj {0} je djeljiv sa 2 ", broj);
+                Console.WriteLine("broj je djeljiv s 2");
             }
             else if(broj % 3 == 0)
             {
-                Console.WriteLine("Broj {0} je djeljiv sa 3 ", broj);
+                Console.WriteLine("broj je djeljiv s 3");
             }
             else if(broj % 5 == 0)
             {
-                Console.WriteLine("Broj {0} je djeljiv sa 5", broj);
+                Console.WriteLine("broj je djeljiv s 5");
             }
             else
             {
-                Console.Write("Broj nije djeljiv sa brojevima 2,3,5.");
+                Console.WriteLine("broj nije djeljiv s 2, 3 niti 5");
             }
         }
     }

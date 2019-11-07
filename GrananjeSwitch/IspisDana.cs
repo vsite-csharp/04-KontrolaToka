@@ -14,31 +14,31 @@ namespace Vsite.CSharp.KontrolaToka
             {
                 case DayOfWeek.Monday:
                 {
-                    return "Monday";
+                    return "ponedjeljak";
                 }
                 case DayOfWeek.Tuesday:
                 {
-                    return "Tuesday";
+                    return "utorak";
                 }
                 case DayOfWeek.Wednesday:
                 {
-                    return "Wednesday";
+                    return "srijeda";
                 }
                 case DayOfWeek.Thursday:
                 {
-                    return "Thursday";
+                    return "četvrtak";
                 }
                 case DayOfWeek.Friday:
                 {
-                    return "Friday";
+                    return "petak";
                 }
                 case DayOfWeek.Saturday:
                 {
-                    return "Saturday";
+                    return "subota";
                 }
                 case DayOfWeek.Sunday:
                 {
-                    return "Sunday";
+                    return "nedjelja";
                 }
                 default:
                     throw new ArgumentOutOfRangeException("Value is not good");

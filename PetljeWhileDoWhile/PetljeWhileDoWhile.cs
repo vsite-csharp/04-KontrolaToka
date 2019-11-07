@@ -8,16 +8,15 @@ namespace Vsite.CSharp.KontrolaToka
         {
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
             int brojBacanja = 0;
-            int bacanje = 0;
-
-            
-            do{
-                //++brojBacanja;
+            int bacanje;
+            do
+            {
+                ++brojBacanja;
                 bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine("{0}. pokušaj: {1}", brojBacanja, bacanje);
             } while (bacanje != 6);
 
-                return brojBacanja;
+            return brojBacanja;
         }
 
         public static int BacajDokNeProđe12Polja(int brojPređenihPolja)
@@ -25,7 +24,7 @@ namespace Vsite.CSharp.KontrolaToka
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
 
 
-            while (brojPređenihPolja >= 12)
+            while (brojPređenihPolja < 12)
             {
                 int bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"Bacanje: {bacanje}");

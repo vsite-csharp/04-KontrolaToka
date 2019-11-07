@@ -8,21 +8,18 @@ namespace Vsite.CSharp.KontrolaToka
         {
             for(int i = 0; i <= n; ++i)
             {
-                Console.Write(i); Console.Write(" ");
+                Console.WriteLine(i);
             }
-            Console.WriteLine();
         }
 
         public static void PetljaWhile(int n)
         {
             int i = 0;
-            while(i <= 10)
+            while(i <= n)
             {
-                Console.Write(i); Console.Write(" ");
+                Console.WriteLine(i);
                 ++i;
             }
-            Console.WriteLine();
-
         }
 
         static void Main(string[] args)
