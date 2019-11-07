@@ -9,39 +9,38 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static bool Sadrži(IEnumerable<string> nizRiječi, string tražena)
         {
-            foreach(var i in nizRiječi)
-            {
-                if (string.Equals(i, tražena))
-                    return true;
-            }
+            return nizRiječi.Contains(tražena);
+            //foreach(var i in nizRiječi)
+            //{
+            //    if (string.Equals(i, tražena))
+            //        return true;
+            //}
             return false;
-            throw new NotImplementedException();
         }
 
         public static int Zbroj(IEnumerable<int> brojevi)
         {
+            return brojevi.Sum();
             int i = 0;
-            foreach(int j in brojevi)
-            {
-                i += j;
-            }
-            return i;
-            throw new NotImplementedException();
+            //foreach(int j in brojevi)
+            //{
+            //    i += j;
+            //}
+            //return i;
         }
 
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
-            IList<string> rez = new List<string>();
-
-            foreach(string i in nizRiječi)
-            {
-                if(String.Compare(i, graničnaRiječ) > 0)
-                {
-                    rez.Add(i);
-                }
-            }
-            return rez;
-            throw new NotImplementedException();
+            return nizRiječi.Where(i => { return string.Compare(i, graničnaRiječ) > 0; });
+            //IList<string> rez = new List<string>();
+            //foreach(string i in nizRiječi)
+            //{
+            //    if(String.Compare(i, graničnaRiječ) > 0)
+            //    {
+            //        rez.Add(i);
+            //    }
+            //}
+            //return rez;
         }
     }
 }
