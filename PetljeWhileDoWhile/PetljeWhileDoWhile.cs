@@ -11,7 +11,8 @@ namespace Vsite.CSharp.KontrolaToka
             int bacanje = 0;
 
             // TODO:090 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
-
+            while (bacanje==6)
+         
             {
                 //++brojBacanja;
                 bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
@@ -29,18 +30,17 @@ namespace Vsite.CSharp.KontrolaToka
 
 
             do
-            {
-
-
+            
             {
                 int bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"Bacanje: {bacanje}");
                 brojPređenihPolja += bacanje;
                 Console.WriteLine($"Ukupno: {brojPređenihPolja}");
-            }
+            
+            } while (brojPređenihPolja < 12);
             return brojPređenihPolja;
 
-            } while (brojPređenihPolja<12);
+           
 
         }
 
