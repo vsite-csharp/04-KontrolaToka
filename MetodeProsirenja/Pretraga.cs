@@ -9,23 +9,30 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static bool Sadrži(IEnumerable<string> nizRiječi, string tražena)
         {
-            // TODO:120 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
-
-            throw new NotImplementedException();
+            return nizRiječi.Contains(tražena);
+            //foreach (string s in nizRiječi)
+            //    if (string.Compare(s, tražena) == 0)
+            //        return true;
+            //return false;
         }
 
         public static int Zbroj(IEnumerable<int> brojevi)
         {
-            // TODO:121 Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
-
-            throw new NotImplementedException();
+            return brojevi.Sum();
+            //int result = 0;
+            //foreach (int i in brojevi)
+            //    result += i;
+            //return result;
         }
 
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
-            // TODO:122 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
-
-            throw new NotImplementedException();
+            return nizRiječi.Where(riječ => { return string.Compare(riječ, graničnaRiječ) > 0; });
+            //List<string> list = new List<string>();
+            //foreach (string s in nizRiječi)
+            //    if (string.Compare(s, graničnaRiječ) > 0)
+            //        list.Add(s);
+            //return list;
         }
     }
 }
