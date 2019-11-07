@@ -8,7 +8,8 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void Ispiši(IEnumerable kolekcija)
         {
-            // TODO:110 Napisati foreach petlju tako da ispisuje sve članove kolekcije
+            foreach (var element in kolekcija)   //VAR upotrebljavamo jer on jedini "podržava" sve tipove
+                Console.WriteLine(element);
 
         }
 

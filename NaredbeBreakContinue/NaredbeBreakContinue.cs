@@ -5,12 +5,12 @@ namespace Vsite.CSharp.KontrolaToka
     class NaredbeBreakContinue
     {
         public static int ZbrojiDoNSveKojiSuDjeljiviSaD(int n, int d)
-        {
+        {    //TODO:010 KRIVO WTF
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
-            {
-                // TODO:100 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
-
+            {     
+                if (i % d != 0)
+                    continue;  
                 zbroj += i;
             }
             return zbroj;
@@ -21,11 +21,11 @@ namespace Vsite.CSharp.KontrolaToka
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:101 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                if (i % d != 0)
+                    continue;
 
-
-                // TODO:102 Ako je i djeljiv sa d2, tada treba prekinuti petlju
-
+                if (i % d2 == 0)
+                    break;
 
                 zbroj += i;
             }
