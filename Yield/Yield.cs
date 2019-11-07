@@ -16,8 +16,7 @@ namespace Vsite.CSharp.KontrolaToka
             foreach (var broj in niz1)
                 Console.WriteLine(broj);
 
-            var niz2 = FibonacciIEnumerable();
-            foreach (var broj in niz2)
+            foreach (var broj in FibonacciIEnumerable())
                 Console.WriteLine(broj);
 
             Console.WriteLine("GOTOVO!!!");
@@ -44,19 +43,43 @@ namespace Vsite.CSharp.KontrolaToka
             int trenutni = 1;
             while (prethodni < int.MaxValue / 2)
             {
-                // TODO:130 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
-                // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
-                prethodni = trenutni;
-                trenutni = zbroj;
-                rezultat.Add(trenutni);
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+                catch (OverflowException)
+                {
+                    break;
+                }
             }
             return rezultat;
         }
 
-        // TODO:131 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
+            yield return 0;
+            yield return 1;
+            int prethodni = 0;
+            int trenutni = 1;
+            while (prethodni < int.MaxValue / 2)
+            {
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    
+                }
+                catch (OverflowException)
+                {
+                    break;
+                }
+                yield return trenutni;
+            }
+            yield break;
             throw new NotImplementedException();
         }
     }

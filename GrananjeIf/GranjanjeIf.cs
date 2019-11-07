@@ -26,7 +26,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static void ProvjeriDjeljivost(int broj)
         {
-            // TODO:020 DOMACA ZADACA do 102
             if (broj % 2 == 0) {
                 Console.WriteLine("Broj je dijeljiv s 2");
             }

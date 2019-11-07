@@ -18,7 +18,7 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine(Pretraga.Zbroj(brojevi));
 
             Console.WriteLine("NađiSveIza:");
-            riječi = new string[] { "more", "sunce", "rijeka", "mjesec", "potok", "barka" };
+            riječi = new string[] { "more", "sunce", "rijeka", "mjesec", "potok", "barka", "stud" };
             foreach (string riječ in Pretraga.NađiSveIza(riječi, "student"))
                 Console.WriteLine(riječ);
 
