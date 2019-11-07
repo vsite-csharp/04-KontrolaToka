@@ -42,22 +42,48 @@ namespace Vsite.CSharp.KontrolaToka
 
             int prethodni = 0;
             int trenutni = 1;
-            while (prethodni < int.MaxValue / 2)
+
+            while (true)
             {
-                // TODO:130 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
-                // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
-                prethodni = trenutni;
-                trenutni = zbroj;
-                rezultat.Add(trenutni);
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+                catch (OverflowException e)
+                {
+                    Console.WriteLine(e.Message);
+                    break;
+                }
+        
             }
             return rezultat;
         }
 
-        // TODO:131 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+            yield return 0;
+            yield return 1;
+            int prethodni = 0;
+            int trenutni = 1;
+            while (true)
+            {
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                }
+                catch (OverflowException e)
+                {
+                    break;
+                }
+    
+                yield return trenutni;
+            }
+            yield break;
         }
     }
 }
