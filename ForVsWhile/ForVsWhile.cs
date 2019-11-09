@@ -6,12 +6,26 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void PetljaFor(int n)
         {
-            // TODO:080 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+            for(int i=0; i <= n; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         public static void PetljaWhile(int n)
         {
-            // TODO:081 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            int i = 0;
+            while(i <= n)
+            {
+                Console.WriteLine(i++);
+            }
+            //Random rand = new Random();
+            //int a = 0;
+            //while ((a = rand.Next(5)) != 0)
+            //{
+            //    Console.WriteLine(a);
+            //}
+
         }
 
         static void Main(string[] args)
