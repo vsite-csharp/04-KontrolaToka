@@ -13,7 +13,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static void GrananjemIf(int broj)
         {
-            // TODO:041 Korištenjem grananja if dodijeliti varijabli odgovor vrijednost "paran" ili "neparan" ovisno o djeljivosti zadanog broja
             string odgovor = "neparan";
             if (broj % 2 == 0)
                 odgovor = "paran";
