@@ -7,7 +7,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
     public class TestYield
     {
         [TestMethod]
-        public void Yield_MetodaFibonacciVraćaNiz()
+        public void MetodaFibonacciVraćaNiz()
         {
             var niz = Yield.FibonacciIEnumerable();
             // provjera da rezultat nije neka kolekcija

@@ -6,19 +6,19 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
     public class TestNulUvjetnogOperatora
     {
         [TestMethod]
-        public void NulUvjetniOperator_PozoviToStringVraćaNulreferencuZaNulObjekt()
+        public void PozoviToStringVraćaNulreferencuZaNulObjekt()
         {
             Assert.AreEqual(null, NulUvjetniOperator.PozoviToString(null));
         }
 
         [TestMethod]
-        public void NulUvjetniOperator_PozoviToStringVraćaTekstZaString()
+        public void PozoviToStringVraćaTekstZaString()
         {
             Assert.AreEqual("Mario", NulUvjetniOperator.PozoviToString("Mario"));
         }
 
         [TestMethod]
-        public void NulUvjetniOperator_PozoviToStringVraćaPunoImeTipaZaObject()
+        public void PozoviToStringVraćaPunoImeTipaZaObject()
         {
             Assert.AreEqual("System.Object", NulUvjetniOperator.PozoviToString(new object()));
         }

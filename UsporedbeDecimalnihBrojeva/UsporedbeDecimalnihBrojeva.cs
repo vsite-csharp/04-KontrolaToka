@@ -2,13 +2,14 @@
 
 namespace Vsite.CSharp.KontrolaToka
 {
-    class UsporedbeRealnihBrojeva
+    class UsporedbeDecimalnihBrojeva
     {
         static void Main(string[] args)
         {
             double tri = 3.0;
 
-            // TODO:030 Provjeriti što će ispisati donje dvije usporedbe te promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+            // TODO:020 Provjeriti što će ispisati donje dvije usporedbe te promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+            // TODO:021 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
             if (JednakiSu((1.0 - 1.0 / tri), (2.0 / tri)))
                 Console.WriteLine("1 - 1/3 jednako je 2/3");
             else

@@ -9,7 +9,7 @@ namespace Vsite.CSharp.KontrolaToka
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:100 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                // TODO:090 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
 
                 zbroj += i;
             }
@@ -21,16 +21,18 @@ namespace Vsite.CSharp.KontrolaToka
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:101 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                // TODO:091 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
 
 
-                // TODO:102 Ako je i djeljiv sa d2, tada treba prekinuti petlju
+                // TODO:092 Ako je i djeljiv sa d2, tada treba prekinuti petlju
 
 
                 zbroj += i;
             }
             return zbroj;
         }
+
+        // TODO:093 Porenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
 
         static void Main(string[] args)
         {

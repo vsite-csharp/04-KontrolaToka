@@ -66,7 +66,7 @@
     <Compile Include="TestNulStapajućegOperatora.cs" />
     <Compile Include="TestNulUvjetnogOperatora.cs" />
     <Compile Include="TestPetljeWhileDoWhile.cs" />
-    <Compile Include="TestUsporedbeRealnihBrojeva.cs" />
+    <Compile Include="TestUsporedbeDecimalnihBrojeva.cs" />
     <Compile Include="TestUvjetnogPridruživanja.cs" />
     <Compile Include="TestYield.cs" />
   </ItemGroup>
@@ -118,9 +118,9 @@
       <Project>{3585fc6a-775f-485a-8fe9-9802859a84c8}</Project>
       <Name>PetljeWhileDoWhile</Name>
     </ProjectReference>
-    <ProjectReference Include="..\UsporedbeRealnihBrojeva\UsporedbeRealnihBrojeva.csproj">
+    <ProjectReference Include="..\UsporedbeDecimalnihBrojeva\UsporedbeDecimalnihBrojeva.csproj">
       <Project>{b97e1e4f-18c9-462e-a465-222fc8c350ca}</Project>
-      <Name>UsporedbeRealnihBrojeva</Name>
+      <Name>UsporedbeDecimalnihBrojeva</Name>
     </ProjectReference>
     <ProjectReference Include="..\UvjetnoPridruzivanje\UvjetnoPridruživanje.csproj">
       <Project>{eb8ef899-d1ab-497c-8927-6f8262cba1b8}</Project>

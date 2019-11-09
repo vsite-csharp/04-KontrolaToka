@@ -7,28 +7,28 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
     public class TestMetodaProširenja
     {
         [TestMethod]
-        public void MetodeProširenja_SadržiVraćaTrueZaRiječKojaJeUNizu()
+        public void SadržiVraćaTrueZaRiječKojaJeUNizu()
         {
             string[] riječi = new string[] { "Franjo", "Ivana", "Dora", "Mirko" };
             Assert.IsTrue(Pretraga.Sadrži(riječi, "Dora"));
         }
 
         [TestMethod]
-        public void MetodeProširenja_SadržiVraćaFalseZaRiječKojaNijeUNizu()
+        public void SadržiVraćaFalseZaRiječKojaNijeUNizu()
         {
             string[] riječi = new string[] { "Franjo", "Ivana", "Dora", "Mirko" };
             Assert.IsFalse(Pretraga.Sadrži(riječi, "Ema"));
         }
 
         [TestMethod]
-        public void MetodeProširenja_ZbrojiVraćaIspravanZbrojZaNizCijelihBrojeva()
+        public void ZbrojiVraćaIspravanZbrojZaNizCijelihBrojeva()
         {
             int[] brojevi = new int[] { 1, 2, 4, 5, 12, 13 };
             Assert.AreEqual(37, Pretraga.Zbroj(brojevi));
         }
 
         [TestMethod]
-        public void MetodeProširenja_VraćaSveRiječiKojeSuPoAbecediIzaZadane()
+        public void VraćaSveRiječiKojeSuPoAbecediIzaZadane()
         {
             string[] riječi = new string[] { "auto", "more", "sunce", "mama", "stolica", "kukuruz" };
             var rez = Pretraga.NađiSveIza(riječi, "punica");
@@ -36,6 +36,5 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
             Assert.IsTrue(rez.Contains("sunce"));
             Assert.IsTrue(rez.Contains("stolica"));
         }
-
     }
 }

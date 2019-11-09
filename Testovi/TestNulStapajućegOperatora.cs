@@ -6,7 +6,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
     public class TestNulStapajućegOperatora : ConsoleTest
     {
         [TestMethod]
-        public void NulStapajućiOperator_IspišiStringIspisujeZadaniTekst()
+        public void IspišiStringIspisujeZadaniTekst()
         {
             string ime = "Pero";
             NulStapajućiOperator.IspišiString(ime);
@@ -14,7 +14,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void NulStapajućiOperator_IspišiStringZaNulStringIspisujeNedefiniran()
+        public void IspišiStringZaNulStringIspisujeNedefiniran()
         {
             string ime = null;
             NulStapajućiOperator.IspišiString(ime);
@@ -22,7 +22,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void NulStapajućiOperator_IspišiStringZaZadaniCijeliBrojIspisujeNjegovuVrijednost()
+        public void IspišiStringZaZadaniCijeliBrojIspisujeNjegovuVrijednost()
         {
             int broj = 54;
             NulStapajućiOperator.IspišiString(broj);
@@ -30,7 +30,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void NulStapajućiOperator_IspišiStringZaNulBrojIspisujeNedefiniran()
+        public void IspišiStringZaNulBrojIspisujeNedefiniran()
         {
             double? broj = null;
             NulStapajućiOperator.IspišiString(broj);

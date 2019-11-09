@@ -6,7 +6,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
     public class TestNaredbeBreakContinue
     {
         [TestMethod]
-        public void NaredbeBreakContinue_ZbrojiDoNSveKojiSuDjeljiviSaD()
+        public void ZbrojiDoNSveKojiSuDjeljiviSaD()
         {
             Assert.AreEqual(30, NaredbeBreakContinue.ZbrojiDoNSveKojiSuDjeljiviSaD(10, 2));
             Assert.AreEqual(18, NaredbeBreakContinue.ZbrojiDoNSveKojiSuDjeljiviSaD(10, 3));
@@ -14,7 +14,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void NaredbeBreakContinue_ZbrojiDoNSveKojiSuDjeljiviSaDAliSamoDoPrvogDjeljivogSaD2()
+        public void ZbrojiDoNSveKojiSuDjeljiviSaDAliSamoDoPrvogDjeljivogSaD2()
         {
             Assert.AreEqual(2, NaredbeBreakContinue.ZbrojiDoNSveKojiSuDjeljiviSaDAliSamoDoPrvogDjeljivogSaD2(10, 2, 4));
             Assert.AreEqual(18, NaredbeBreakContinue.ZbrojiDoNSveKojiSuDjeljiviSaDAliSamoDoPrvogDjeljivogSaD2(10, 3, 8));

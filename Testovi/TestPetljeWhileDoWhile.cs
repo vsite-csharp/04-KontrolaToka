@@ -10,7 +10,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
     public class TestPetljeWhileDoWhile : ConsoleTest
     {
         [TestMethod]
-        public void PetljeWhileDoWhile_BrojBacanjaDoBačeneŠestice()
+        public void BrojBacanjaDoBačeneŠestice()
         {
             PetljeWhileDoWhile.BrojBacanjaDoBačeneŠestice();
             Assert.IsFalse(cw.IsEmpty); // barem jedno bacanje!
@@ -29,7 +29,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void PetljeWhileDoWhile_BacajDokNeProđe12Polja()
+        public void BacajDokNeProđe12Polja()
         {
             int početno = 5;
             int ukupno = PetljeWhileDoWhile.BacajDokNeProđe12Polja(početno);
@@ -52,7 +52,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void PetljeWhileDoWhile_BacajDokNeProđe12PoljaJePrazanZa12iliViše()
+        public void BacajDokNeProđe12PoljaJePrazanZa12iliViše()
         {
             Assert.AreEqual(12, PetljeWhileDoWhile.BacajDokNeProđe12Polja(12));
             Assert.IsTrue(cw.IsEmpty); // ne smije biti niti jedno bacanje!

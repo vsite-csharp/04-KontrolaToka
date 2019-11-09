@@ -6,7 +6,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
     public class TestGrananjaIf : ConsoleTest
     {
         [TestMethod]
-        public void GrananjeIf_ZaBrojDjeljivS_2()
+        public void ZaBrojDjeljivS_2()
         {
             GranjanjeIf.ProvjeriDjeljivost(2);
             Assert.AreEqual("broj je djeljiv s 2", cw.GetString());
@@ -17,7 +17,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void GrananjeIf_ZaBrojDjeljivS_3()
+        public void ZaBrojDjeljivS_3()
         {
             GranjanjeIf.ProvjeriDjeljivost(3);
             Assert.AreEqual("broj je djeljiv s 3", cw.GetString());
@@ -28,7 +28,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void GrananjeIf_ZaBrojDjeljivS_5()
+        public void ZaBrojDjeljivS_5()
         {
             GranjanjeIf.ProvjeriDjeljivost(5);
             Assert.AreEqual("broj je djeljiv s 5", cw.GetString());
@@ -39,7 +39,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
         }
 
         [TestMethod]
-        public void GrananjeIf_ZaBrojKojiNijeDjeljivS_2_3_5()
+        public void ZaBrojKojiNijeDjeljivS_2_3_5()
         {
             GranjanjeIf.ProvjeriDjeljivost(1);
             Assert.AreEqual("broj nije djeljiv s 2, 3 niti 5", cw.GetString());

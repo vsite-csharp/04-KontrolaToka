@@ -7,7 +7,7 @@
     <ProjectGuid>{B97E1E4F-18C9-462E-A465-222FC8C350CA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <RootNamespace>Vsite.CSharp.KontrolaToka</RootNamespace>
-    <AssemblyName>UsporedbeRealnihBrojeva</AssemblyName>
+    <AssemblyName>UsporedbeSecimalnihBrojeva</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -35,11 +35,8 @@
     <Reference Include="System" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="UsporedbeRealnihBrojeva.cs" />
+    <Compile Include="UsporedbeDecimalnihBrojeva.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
