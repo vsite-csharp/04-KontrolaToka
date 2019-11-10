@@ -23,7 +23,6 @@ namespace Vsite.CSharp.KontrolaToka
         {
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
 
-            // TODO:091 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
             while(brojPređenihPolja<12)
             {
                 int bacanje = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
