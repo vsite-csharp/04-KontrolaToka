@@ -5,7 +5,7 @@ namespace Vsite.CSharp.KontrolaToka
     class NaredbeBreakContinue
     {
         public static int ZbrojiDoNSveKojiSuDjeljiviSaD(int n, int d)
-        {    //TODO:010 KRIVO WTF
+        {    
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {     
