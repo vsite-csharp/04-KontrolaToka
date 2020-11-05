@@ -30,7 +30,7 @@ namespace Vsite.CSharp.KontrolaToka
             {
                 return true;
             }
-           return Math.Abs(broj1 - broj2) < (Math.Abs(broj1 + broj2)) * 0.0001;
+           return Math.Abs(broj1 - broj2) < (Math.Abs(broj1 )+Math.Abs( broj2)) * 0.000001;
         }
     }
 }
