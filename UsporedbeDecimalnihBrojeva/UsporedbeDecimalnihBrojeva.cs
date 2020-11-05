@@ -26,7 +26,11 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return broj1 == broj2;
+            if( broj1 == broj2)
+            {
+                return true;
+            }
+           return Math.Abs(broj1 - broj2) < (Math.Abs(broj1 + broj2)) * 0.0001;
         }
     }
 }
