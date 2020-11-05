@@ -6,7 +6,8 @@ namespace Vsite.CSharp.KontrolaToka
     {
         static void Main(string[] args)
         {
-            //test
+
+
             DosegImena p = new DosegImena();
             p.IspišiAove();
 
@@ -18,15 +19,18 @@ namespace Vsite.CSharp.KontrolaToka
         {
             string a = "Lokalna varijabla";
 
-            // TODO:000 Ispisati vrijednosti lokalne varijable a
-
-            // TODO:001 Ispisati vrijednost člana klase a
-
+            // ispisati vrijednosti lokalne varijable a
+            Console.WriteLine(a);
+            // Ispisati vrijednost člana klase a
+            Console.WriteLine(this.a);
             {
-                // TODO:002 Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
-
+                //  Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
+                //double a = 3.14;
+                //Console.WriteLine(this.a);
             }
-            // TODO:003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
+            // Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
+                        
+        
         }
 
         string a = "Član klase";
