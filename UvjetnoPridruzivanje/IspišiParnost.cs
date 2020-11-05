@@ -6,6 +6,7 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void UvjetnimPridruživanjem(int broj)
         {
+            //DZ
             // TODO:030 Napisati uvjetno pridruživanje ?: koje će ovisno o dijeljivosti broja varijabli odgovor dodijeliti vrijednost "paran" ili "neparan"
             string odgovor = "neparan";
 
