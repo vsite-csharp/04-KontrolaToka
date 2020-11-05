@@ -6,6 +6,7 @@ namespace Vsite.CSharp.KontrolaToka
     {
         static void Main(string[] args)
         {
+            //test
             DosegImena p = new DosegImena();
             p.IspišiAove();
 
