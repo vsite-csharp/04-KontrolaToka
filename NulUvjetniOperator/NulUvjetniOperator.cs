@@ -8,12 +8,12 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static string PozoviToString(object obj)
         {
-            // TODO:050 Korištenjem nul-uvjetnog (null conditional) operatora ?. vratiti rezultat metode ToString na prosljeđenom objektu ako je različit od nule, u protivnom vratiti nul-referencu
-
+            // Korištenjem nul-uvjetnog (null conditional) operatora ?? vratiti rezultat metode ToString na prosljeđenom objektu ako je različit od nule, u protivnom vratiti nul-referencu
+            return obj?.ToString();
             throw new NotImplementedException();
         }
 
-        // TODO:051 Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
+        // Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
 
         static void Main(string[] args)
         {
@@ -24,11 +24,11 @@ namespace Vsite.CSharp.KontrolaToka
             ime = null;
             Console.WriteLine("Ispisujem null-string:");
             Console.WriteLine(PozoviToString(ime)); // trebalo bi ispisati prazan redak
-
+           
             object obj = null;
             Console.WriteLine("Ispisujem null-object:");
             Console.WriteLine(PozoviToString(obj)); // trebalo bi ispisati prazan redak
-
+           
             obj = new object();
             Console.WriteLine("Ispisujem object:");
             Console.WriteLine(PozoviToString(obj)); // trebalo bi ispisati "System.Object"
