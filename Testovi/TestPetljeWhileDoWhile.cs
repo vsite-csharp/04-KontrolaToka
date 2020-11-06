@@ -57,7 +57,7 @@ namespace Vsite.CSharp.KontrolaToka.Testovi
             Assert.AreEqual(12, PetljeWhileDoWhile.BacajDokNeProđe12Polja(12));
             Assert.IsTrue(cw.IsEmpty); // ne smije biti niti jedno bacanje!
 
-            Assert.AreEqual(16, PetljeWhileDoWhile.BacajDokNeProđe12Polja(16));
+            Assert.AreEqual(14, PetljeWhileDoWhile.BacajDokNeProđe12Polja(14));
             Assert.IsTrue(cw.IsEmpty); // ne smije biti niti jedno bacanje!
         }
     }
