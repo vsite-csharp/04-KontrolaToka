@@ -29,12 +29,12 @@ namespace Vsite.CSharp.KontrolaToka
 
             PetljaWhile(10);
 
-            // TODO:072 Prevesti program te programom ILDasm usporediti međukod gornjih metoda
+            // Prevesti program te programom ILDasm usporediti međukod gornjih metoda
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
 
-        // TODO:073 Pokrenuti testove i projeriti prolaze li oba testa u grupi TestForVsWhile
+        // Pokrenuti testove i projeriti prolaze li oba testa u grupi TestForVsWhile
     }
 }
