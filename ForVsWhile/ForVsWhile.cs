@@ -6,12 +6,22 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void PetljaFor(int n)
         {
-            // TODO:070 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+            // Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+            for (int i = 0; i <= n; i++)
+            {
+                Console.WriteLine(i);
+            }
         }
 
         public static void PetljaWhile(int n)
         {
-            // TODO:071 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            // Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            int i = 0;
+            while (i <= n)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
         }
 
         static void Main(string[] args)
@@ -20,12 +30,12 @@ namespace Vsite.CSharp.KontrolaToka
 
             PetljaWhile(10);
 
-            // TODO:072 Prevesti program te programom ILDasm usporediti međukod gornjih metoda
+            // Prevesti program te programom ILDasm usporediti međukod gornjih metoda
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
 
-        // TODO:073 Pokrenuti testove i projeriti prolaze li oba testa u grupi TestForVsWhile
+        //  Pokrenuti testove i projeriti prolaze li oba testa u grupi TestForVsWhile
     }
 }
