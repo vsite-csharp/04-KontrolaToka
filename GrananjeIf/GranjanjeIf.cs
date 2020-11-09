@@ -46,6 +46,7 @@ namespace Vsite.CSharp.KontrolaToka
                 Console.WriteLine("broj je djeljiv s 5");
             
             // 4. treba ispisati "broj nije djeljiv s 2, 3 niti 5"
+            else
             Console.WriteLine("broj nije djeljiv s 2, 3 niti 5");
             // TODO:011 Pokrenuti testove i provjertiti prolaze li 4 testa iz grupe TestGrananjaIf
         }
