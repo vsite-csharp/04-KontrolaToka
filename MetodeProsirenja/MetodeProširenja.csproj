@@ -39,5 +39,11 @@
     <Compile Include="Pretraga.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Foreach\Foreach.csproj">
+      <Project>{7901c66e-e5ec-4355-b1ad-b0b7c3e7722a}</Project>
+      <Name>Foreach</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

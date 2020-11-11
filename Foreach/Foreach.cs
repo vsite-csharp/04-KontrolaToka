@@ -4,7 +4,7 @@ using System.Collections;
 
 namespace Vsite.CSharp.KontrolaToka
 {
-    class Foreach
+    public class Foreach
     {
         public static void Ispiši(IEnumerable kolekcija)
         {
