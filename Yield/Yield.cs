@@ -9,14 +9,19 @@ namespace Vsite.CSharp.KontrolaToka
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Kvadrati brojeva:");
             // TODO:120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
             foreach (var kvadrat in DajKvadrate())
                 Console.WriteLine(kvadrat);
 
+            Console.WriteLine();
+            Console.WriteLine("Fibonaccijev niz preko liste:");
             var niz1 = FibonacciList();
             foreach (var broj in niz1)
                 Console.WriteLine(broj);
 
+            Console.WriteLine();
+            Console.WriteLine("Fibonaccijev niz pomoću yielda:");
             var niz2 = FibonacciIEnumerable();
             foreach (var broj in niz2)
                 Console.WriteLine(broj);
