@@ -88,6 +88,7 @@ namespace Vsite.CSharp.KontrolaToka
                 }
                 catch (OverflowException)
                 {
+
                     yield break;
                 }
                 yield return trenutni;
