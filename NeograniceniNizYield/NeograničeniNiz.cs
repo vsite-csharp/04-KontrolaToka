@@ -61,7 +61,7 @@ namespace Vsite.CSharp.KontrolaToka
             Console.ReadKey();
         }
 
-        // TODO:130 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva. 
+        // Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva. 
         //          Otkomentirati prvu petlju gore i provjeriti ispravnost implementacije.
         public static IEnumerable<double> NizSlučajnihBrojeva()
         {
@@ -71,7 +71,7 @@ namespace Vsite.CSharp.KontrolaToka
             //throw new NotImplementedException();
         }
 
-        // TODO:131 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva uz zadanu početnu klicu.
+        // Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva uz zadanu početnu klicu.
         //          Otkomentirati drugu petlju gore i provjeriti ispravnost implementacije.
         public static IEnumerable<double> NizSlučajnihBrojeva(int klica)
         {
