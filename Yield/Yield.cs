@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
+
+
 namespace Vsite.CSharp.KontrolaToka
 {
     class Yield
@@ -10,9 +12,11 @@ namespace Vsite.CSharp.KontrolaToka
         static void Main(string[] args)
         {
             Console.WriteLine("Kvadrati brojeva:");
-            // TODO:120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
+            // Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
             foreach (var kvadrat in DajKvadrate())
                 Console.WriteLine(kvadrat);
+
+
 
             Console.WriteLine();
             Console.WriteLine("Fibonaccijev niz preko liste:");
@@ -20,15 +24,21 @@ namespace Vsite.CSharp.KontrolaToka
             foreach (var broj in niz1)
                 Console.WriteLine(broj);
 
+
+
             Console.WriteLine();
             Console.WriteLine("Fibonaccijev niz pomoću yielda:");
             var niz2 = FibonacciIEnumerable();
             foreach (var broj in niz2)
                 Console.WriteLine(broj);
 
+
+
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
+
+
 
         static IEnumerable<int> DajKvadrate()
         {
@@ -39,32 +49,67 @@ namespace Vsite.CSharp.KontrolaToka
             yield return 16;
         }
 
+
+
         public static IList<int> FibonacciList()
         {
             List<int> rezultat = new List<int>();
             rezultat.Add(0);
             rezultat.Add(1);
 
+
+
             int prethodni = 0;
             int trenutni = 1;
-            while (prethodni < int.MaxValue / 2)
+            while (true)
             {
-                // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
-                prethodni = trenutni;
-                trenutni = zbroj;
-                rezultat.Add(trenutni);
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+                catch (OverflowException)
+                {
+                    return rezultat;
+                }
             }
-            return rezultat;
         }
 
-        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+
+
+        // Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
+            yield return 0;
+            yield return 1;
+
+
+
+            int prethodni = 0;
+            int trenutni = 1;
+            while (true)
+            {
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                }
+                catch (OverflowException)
+                {
+                    yield break;
+                }
+                yield return trenutni;
+            }
             throw new NotImplementedException();
         }
 
-        // TODO:123 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
+
+
+        // Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
 }
