@@ -9,7 +9,8 @@ namespace Vsite.CSharp.KontrolaToka
         public static void Ispiši(IEnumerable kolekcija)
         {
             // TODO:100 Napisati foreach petlju tako da ispisuje sve članove kolekcije
-
+            foreach (string ime in kolekcija)
+                Console.WriteLine(ime);
         }
 
         // TODO:101 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
