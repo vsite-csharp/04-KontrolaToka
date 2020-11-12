@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 
 namespace Vsite.CSharp.KontrolaToka
@@ -9,26 +10,43 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static bool Sadrži(IEnumerable<string> nizRiječi, string tražena)
         {
-            // TODO:110 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
+            // Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
             // (za jednostavnije rješenje, pogledati https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable)
+            //foreach(var rijec in nizRiječi)
+            //{
+            //    if (rijec == tražena) return true;
+            //}
+            //return false;
 
-            throw new NotImplementedException();
+            return nizRiječi.Contains(tražena);
+            //throw new NotImplementedException();
         }
 
         public static int Zbroj(IEnumerable<int> brojevi)
         {
-            // TODO:111 Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
-
-            throw new NotImplementedException();
+            // Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
+            return brojevi.Sum();
+            //throw new NotImplementedException();
         }
 
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
-            // TODO:112 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
-
-            throw new NotImplementedException();
+            // Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
+            //lambda izraz: (x, y) => nesto, to jest preslikava iz x i y u nesto
+            return nizRiječi.Where(rijec => rijec.CompareTo(graničnaRiječ) > 0);
+            //throw new NotImplementedException();
+            //drugi nacin ispod
+            //List<string> rezultat = new List<string>;
+            //foreach(var rijec in nizRiječi)
+            //{
+            //    if (rijec.CompareTo(graničnaRiječ) > 0)
+            //    {
+            //        rezultat.Add(rijec);
+            //    }
+            //}
+            //return rezultat;
         }
 
-        // TODO:113 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
+        // Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
     }
 }
