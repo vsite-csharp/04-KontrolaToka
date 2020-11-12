@@ -8,11 +8,14 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void Ispiši(IEnumerable kolekcija)
         {
-            // TODO:100 Napisati foreach petlju tako da ispisuje sve članove kolekcije
-
+            // Napisati foreach petlju tako da ispisuje sve članove kolekcije
+            foreach(var član in kolekcija)
+            {
+                Console.WriteLine(član);
+            }
         }
 
-        // TODO:101 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
+        // Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
 
         public static void Main(string[] args)
         {
