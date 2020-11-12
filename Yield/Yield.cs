@@ -42,24 +42,60 @@ namespace Vsite.CSharp.KontrolaToka
 
             int prethodni = 0;
             int trenutni = 1;
-            while (prethodni < int.MaxValue / 2)
-            {
-                // TODO:120 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+            //while (prethodni < int.MaxValue / 2)
+                while (true)
+                {
+                // Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
+
+                try
+                {
+
+              
                 int zbroj = prethodni + trenutni;
                 prethodni = trenutni;
                 trenutni = zbroj;
                 rezultat.Add(trenutni);
+                }
+                catch (OverflowException)
+                {
+                    return rezultat;
+                }
             }
-            return rezultat;
         }
 
-        // TODO:121 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+        // Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
+
+            List<int> rezultat = new List<int>();
+            rezultat.Add(0);
+            rezultat.Add(1);
+
+            int prethodni = 0;
+            int trenutni = 1;
+            //while (prethodni < int.MaxValue / 2)
+            while (true)
+            {
+                try
+                {
+
+
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+                catch (OverflowException)
+                {
+                    yield break;
+                }
+                yield return trenutni;
+
+            }
             throw new NotImplementedException();
         }
 
-        // TODO:122 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
+        //  Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
 }
