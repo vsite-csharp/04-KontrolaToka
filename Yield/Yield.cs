@@ -47,24 +47,50 @@ namespace Vsite.CSharp.KontrolaToka
 
             int prethodni = 0;
             int trenutni = 1;
-            while (prethodni < int.MaxValue / 2)
+            while (true)
             {
-                // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
+                int zbroj;
+                try
+                {
+                    zbroj = prethodni + trenutni;
+                }
+                catch(OverflowException)
+                {
+                    return rezultat;
+                }
                 prethodni = trenutni;
                 trenutni = zbroj;
                 rezultat.Add(trenutni);
             }
-            return rezultat;
         }
 
-        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+            yield return 0;
+            yield return 1;
+
+            int prethodni = 0;
+            int trenutni = 1;
+            while (true)
+            {
+                // Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
+                int zbroj;
+                try
+                {
+                    zbroj = prethodni + trenutni;
+                }
+                catch (OverflowException)
+                {
+                    yield break;
+                }
+                prethodni = trenutni;
+                trenutni = zbroj;
+                yield return trenutni;
+            }
         }
 
-        // TODO:123 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
 }
