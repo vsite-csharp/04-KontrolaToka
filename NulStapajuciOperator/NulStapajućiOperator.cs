@@ -21,6 +21,8 @@ namespace Vsite.CSharp.KontrolaToka
             ime = null;
             IspišiString(ime); // trebalo bi ispisati "Nedefiniran"
 
+
+
             double? broj = 5.3;
             IspišiString(broj); // trebalo bi ispisati "5,3"
             broj = null;

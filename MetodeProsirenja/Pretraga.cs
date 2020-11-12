@@ -11,7 +11,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             // TODO:110 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
             // (za jednostavnije rješenje, pogledati https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable)
-
+            //test
             throw new NotImplementedException();
         }
 
