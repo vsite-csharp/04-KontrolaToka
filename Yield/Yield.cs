@@ -9,13 +9,19 @@ namespace Vsite.CSharp.KontrolaToka
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Kvadrati brojeva:");
+            // TODO:120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
             foreach (var kvadrat in DajKvadrate())
                 Console.WriteLine(kvadrat);
 
+            Console.WriteLine();
+            Console.WriteLine("Fibonaccijev niz preko liste:");
             var niz1 = FibonacciList();
             foreach (var broj in niz1)
                 Console.WriteLine(broj);
 
+            Console.WriteLine();
+            Console.WriteLine("Fibonaccijev niz pomoću yielda:");
             var niz2 = FibonacciIEnumerable();
             foreach (var broj in niz2)
                 Console.WriteLine(broj);
@@ -31,7 +37,6 @@ namespace Vsite.CSharp.KontrolaToka
             yield return 4;
             yield return 9;
             yield return 16;
-            yield return 25;
         }
 
         public static IList<int> FibonacciList()
@@ -44,7 +49,7 @@ namespace Vsite.CSharp.KontrolaToka
             int trenutni = 1;
             while (prethodni < int.MaxValue / 2)
             {
-                // TODO:120 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
                 int zbroj = prethodni + trenutni;
                 prethodni = trenutni;
@@ -54,12 +59,12 @@ namespace Vsite.CSharp.KontrolaToka
             return rezultat;
         }
 
-        // TODO:121 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
             throw new NotImplementedException();
         }
 
-        // TODO:122 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
+        // TODO:123 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
 }
