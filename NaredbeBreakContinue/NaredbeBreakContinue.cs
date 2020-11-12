@@ -24,11 +24,11 @@ namespace Vsite.CSharp.KontrolaToka
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:091 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                // Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
                 if (i % d != 0)
                     continue;
 
-                // TODO:092 Ako je i djeljiv sa d2, tada treba prekinuti petlju
+                // Ako je i djeljiv sa d2, tada treba prekinuti petlju
                 if (i % d2 == 0)
                     break;
 
@@ -37,7 +37,7 @@ namespace Vsite.CSharp.KontrolaToka
             return zbroj;
         }
 
-        // TODO:093 Porenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
+        // Porenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
 
         static void Main(string[] args)
         {
