@@ -16,7 +16,7 @@ namespace Vsite.CSharp.KontrolaToka
         }
 
         // TODO:101 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
-
+        //
         public static void Main(string[] args)
         {
             string[] imena = new string[] { "Pero", "Janko", "Mijo" };
