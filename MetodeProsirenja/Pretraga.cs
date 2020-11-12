@@ -9,26 +9,39 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static bool Sadrži(IEnumerable<string> nizRiječi, string tražena)
         {
-            // TODO:110 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
+            // Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
             // (za jednostavnije rješenje, pogledati https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable)
+            //foreach(var riječ in nizRiječi)
+            //{
+            //    if (riječ == tražena)
+            //    {
+            //        return true;
+            //    }
+            //}
 
-            throw new NotImplementedException();
+            return nizRiječi.Contains(tražena);
+
+            //throw new NotImplementedException();
         }
 
         public static int Zbroj(IEnumerable<int> brojevi)
         {
-            // TODO:111 Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
+            // Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
 
-            throw new NotImplementedException();
+            return brojevi.Sum();
+
+            //throw new NotImplementedException();
         }
 
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
-            // TODO:112 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
+            // Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
 
-            throw new NotImplementedException();
+            return nizRiječi.Where(riječ => riječ.CompareTo(graničnaRiječ) > 0);
+
+            //throw new NotImplementedException();
         }
 
-        // TODO:113 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
+        // Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
     }
 }
