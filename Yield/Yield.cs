@@ -20,6 +20,7 @@ namespace Vsite.CSharp.KontrolaToka
             foreach (var broj in niz1)
                 Console.WriteLine(broj);
 
+
             Console.WriteLine();
             Console.WriteLine("Fibonaccijev niz pomoću yielda:");
             var niz2 = FibonacciIEnumerable();
@@ -67,7 +68,7 @@ namespace Vsite.CSharp.KontrolaToka
             return rezultat;
         }
 
-        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+        //  Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
             yield return 0;
@@ -98,4 +99,4 @@ namespace Vsite.CSharp.KontrolaToka
 
         // Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
-}
+

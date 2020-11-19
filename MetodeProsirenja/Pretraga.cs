@@ -19,7 +19,7 @@ namespace Vsite.CSharp.KontrolaToka
             //    return false;
             return nizRiječi.Contains(tražena);
         //    throw new NotImplementedException();
-        //}
+        }
 
         public static int Zbroj(IEnumerable<int> brojevi)
         {
@@ -42,7 +42,7 @@ namespace Vsite.CSharp.KontrolaToka
         }
 
         //  Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
-    }
+    
 
         internal static object Zbroj(int[] brojevi)
         {
@@ -54,3 +54,4 @@ namespace Vsite.CSharp.KontrolaToka
             throw new NotImplementedException();
         }
     }
+}
