@@ -37,7 +37,7 @@ namespace Vsite.CSharp.KontrolaToka
             return zbroj;
         }
 
-        // TODO:093 Porenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
+        // Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
 
         static void Main(string[] args)
         {
