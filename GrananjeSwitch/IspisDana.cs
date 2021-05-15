@@ -12,7 +12,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (danUTjednu)
             {
-                // TODO:060 Napisati grane case za svaki dan u tjednu tako da vraćaju "ponedjeljak" za DayOfWeek.Monday, "utorak" za DayOfWeek.Tuesday itd.
+                // Napisati grane case za svaki dan u tjednu tako da vraćaju "ponedjeljak" za DayOfWeek.Monday, "utorak" za DayOfWeek.Tuesday itd.
                 case (DayOfWeek.Monday):
                     return "ponedjeljak";
                 case (DayOfWeek.Tuesday):
@@ -52,7 +52,7 @@ namespace Vsite.CSharp.KontrolaToka
                     return "vikend";
                 case (DayOfWeek.Sunday):
                     return "vikend";
-                // TODO:063 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
+                // Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
                 default:
                     throw new ArgumentOutOfRangeException();
             }
