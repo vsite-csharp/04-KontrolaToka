@@ -28,7 +28,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             // TODO:010 Napisati grananja if koja će za uneseni broj:
             // 1. provjeriti je li broj paran. 
-            //    Ako je broj paran, treba ispisati poruku "broj je djeljiv s 2", a inače će
+            //    Ako je broj paran, treba ispisati poruku "broj je djeljiv s 2" (KORISTI DOSLOVNO OVE STRINGOVE ZBOG TESTOVA), a inače će
             // 2. provjeriti je li broj djeljiv s 3. 
             //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 3", a inače će
             // 3. provjeriti je li broj djeljiv s 5. 
