@@ -26,6 +26,7 @@ namespace Vsite.CSharp.KontrolaToka
 
             {
                 //Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
+                //var a = "Ante";
                 var novaVarijabla = "Nova Varijabla";
                 Console.WriteLine(novaVarijabla);
 
