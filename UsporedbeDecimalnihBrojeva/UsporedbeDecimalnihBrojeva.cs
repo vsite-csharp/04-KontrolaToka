@@ -8,8 +8,8 @@ namespace Vsite.CSharp.KontrolaToka
         {
             double tri = 3.0;
 
-            // TODO:020 Provjeriti što će ispisati donje dvije usporedbe te promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
-            // TODO:021 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
+            // :020 Provjeriti što će ispisati donje dvije usporedbe te promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+            // :021 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
             if (JednakiSu((1.0 - 1.0 / tri), (2.0 / tri)))
                 Console.WriteLine("1 - 1/3 jednako je 2/3");
             else
@@ -26,7 +26,18 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return broj1 == broj2;
+            if(broj1 == broj2)
+            {
+                return true;
+            }
+            double razlika = Math.Abs(broj1 - broj2);
+            double manji = Math.Min(Math.Abs(broj1), Math.Abs(broj2));
+            const double epsilon = double.Epsilon * double.MaxValue;
+
+            return razlika / manji < epsilon;
+
+
+            //return broj1 == broj2;
         }
     }
 }
