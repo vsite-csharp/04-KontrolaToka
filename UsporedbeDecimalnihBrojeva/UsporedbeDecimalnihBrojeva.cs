@@ -8,7 +8,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             double tri = 3.0;
 
-            // TODO:020 Provjeriti što će ispisati donje usporedbe.
+            // 020 Provjeriti što će ispisati donje usporedbe.
             if (JednakiSu(1.0, 1.00001))
                 Console.WriteLine("1.0 je jednako 1.00001");
             else
@@ -38,10 +38,14 @@ namespace Vsite.CSharp.KontrolaToka
             Console.ReadKey();
         }
 
-        // TODO:021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+        // 021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
-        {
-            return broj1 == broj2;
+        {if(broj1 ==broj2)
+            return true;
+         double razlika = Math.Abs(broj1 - broj2);
+            double manji = Math.Abs(broj1) < Math.Abs(broj2) ? Math.Abs(broj1) : Math.Abs(broj2);
+            const double epsilon = double.Epsilon * double.MaxValue;
+            return razlika / manji < epsilon;
         }
 
         // TODO:022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
