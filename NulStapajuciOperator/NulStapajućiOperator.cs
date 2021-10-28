@@ -8,7 +8,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             // 040 Korištenjem Nul-stapajućeg (null-coalescing) operatora ?? ispisati sadržaj objekta ako je različit od null, inače ispisati "Nedefiniran"
 
-            Console.WriteLine(obj??"nedefiniran");
+            Console.WriteLine(obj??"Nedefiniran");
         }
 
         // 041 Pokrenuti testove i provjeriti prolaze li sva 4 testa iz grupe TestNulStapajućegOperatora
