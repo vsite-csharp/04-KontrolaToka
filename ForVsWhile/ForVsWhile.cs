@@ -36,7 +36,7 @@ namespace Vsite.CSharp.KontrolaToka
 
         // Pokrenuti program te provjeriti ispise
 
-        // TODO:073 Programom ILDasm (Program Files (x86)\Microsoft SDKs\Windows\vNN.N\bin\NETFX N.N Tools\ildasm.exe) usporediti međukod metoda PetljaFor i PetljaWhile
+        // Programom ILDasm (Program Files (x86)\Microsoft SDKs\Windows\vNN.N\bin\NETFX N.N Tools\ildasm.exe) usporediti međukod metoda PetljaFor i PetljaWhile
 
         // Pokrenuti testove i projeriti prolaze li oba testa u grupi TestForVsWhile
     }
