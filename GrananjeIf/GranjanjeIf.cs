@@ -52,7 +52,7 @@ namespace Vsite.CSharp.KontrolaToka
 
             // :011 Pokrenuti program nekoliko puta i upisom različitih brojeva provjeriti ispravnost koda
 
-            // TODO:012 Pokrenuti testove i provjeriti prolaze li 4 testa iz grupe TestGrananjaIf
+            // :012 Pokrenuti testove i provjeriti prolaze li 4 testa iz grupe TestGrananjaIf
         }
     }
 }
