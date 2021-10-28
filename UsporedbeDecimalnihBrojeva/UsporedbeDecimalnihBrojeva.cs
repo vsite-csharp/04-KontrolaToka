@@ -41,10 +41,10 @@ namespace Vsite.CSharp.KontrolaToka
         //Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
         {
-            if(Math.Abs(broj1) < 1e-20)
-                return Math.Abs(broj1 - broj2) * 1e30 < 1e-15;
-
-            return Math.Abs(broj1 - broj2) < 1e-15;
+            var razlika = Math.Abs(broj1 - broj2);
+            var manji = Math.Min(Math.Abs(broj1), Math.Abs(broj2));
+            const double epsilon = double.Epsilon * double.MaxValue;
+            return razlika / manji < epsilon;
         }
 
         // Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
