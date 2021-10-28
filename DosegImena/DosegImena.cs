@@ -23,10 +23,10 @@ namespace Vsite.CSharp.KontrolaToka
             // :001 Ispisati vrijednost člana klase a
             Console.WriteLine(this.a);
             {
-                // TODO:002 Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
+                // :002 Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
                 //int a = 5;
             }
-            // TODO:003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
+            // :003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
         }
 
         string a = "Član klase";
