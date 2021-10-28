@@ -26,6 +26,7 @@ namespace Vsite.CSharp.KontrolaToka
 
         public static void ProvjeriDjeljivost(int broj)
         {
+            // domaći rad: koristiti ove stringove da bi prošli testovi
             // TODO:010 Napisati grananja if koja će za uneseni broj:
             // 1. provjeriti je li broj paran. 
             //    Ako je broj paran, treba ispisati poruku "broj je djeljiv s 2", a inače će
