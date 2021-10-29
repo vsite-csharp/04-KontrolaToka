@@ -9,10 +9,13 @@ namespace Vsite.CSharp.KontrolaToka
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:090 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
-
-                zbroj += i;
+                // Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                if (i % d == 0)
+                {
+                    zbroj += i;
+                }
             }
+
             return zbroj;
         }
 
@@ -21,18 +24,24 @@ namespace Vsite.CSharp.KontrolaToka
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:091 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                if (i % d2 == 0)
+                {
+                    break;
+                }
 
+                // Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                if (i % d == 0)
+                {
+                    zbroj += i;
+                }
 
-                // TODO:092 Ako je i djeljiv sa d2, tada treba prekinuti petlju
-
-
-                zbroj += i;
+                // Ako je i djeljiv sa d2, tada treba prekinuti petlju
             }
+
             return zbroj;
         }
 
-        // TODO:093 Pokrenuti program i provjeriti ispise
+        // Pokrenuti program i provjeriti ispise
 
         static void Main(string[] args)
         {
