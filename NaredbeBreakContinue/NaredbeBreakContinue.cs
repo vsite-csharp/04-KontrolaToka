@@ -24,14 +24,14 @@ namespace Vsite.CSharp.KontrolaToka
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                if (i % d2 == 0)
-                {
-                    break;
-                }
-
                 // Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
                 if (i % d == 0)
                 {
+                    if (i % d2 == 0)
+                    {
+                        break;
+                    }
+
                     zbroj += i;
                 }
 
@@ -45,7 +45,7 @@ namespace Vsite.CSharp.KontrolaToka
 
         static void Main(string[] args)
         {
-            Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaD(10, 2)); // trebalo bi ispisati 20
+            Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaD(10, 2)); // trebalo bi ispisati 30
             Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaD(10, 3)); // trebalo bi ispisati 18
             Console.WriteLine(ZbrojiDoNSveKojiSuDjeljiviSaD(10, 5)); // trebalo bi ispisati 15
 
@@ -55,6 +55,6 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
-        // TODO:094 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
+        // Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
     }
 }

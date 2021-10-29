@@ -26,15 +26,14 @@ namespace Vsite.CSharp.KontrolaToka
         {
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
 
-            // TODO:081 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
-            do
+            // Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
+            while (brojPređenihPolja < 12)
             {
                 int bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"Bacanje: {bačeniBroj}");
                 brojPređenihPolja += bačeniBroj;
                 Console.WriteLine($"Ukupno: {brojPređenihPolja}");
             }
-            while (brojPređenihPolja < 12);
 
             return brojPređenihPolja;
         }
