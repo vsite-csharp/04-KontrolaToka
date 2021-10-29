@@ -9,28 +9,61 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static bool Sadrži(IEnumerable<string> nizRiječi, string tražena)
         {
-            // TODO:110 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
+            // 110 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
             // (za jednostavnije rješenje, pogledati https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable)
+            foreach (var riječ in nizRiječi)
+            {
+                if (riječ == tražena)
+                {
+                    return true;
+                }
+            }
 
-            throw new NotImplementedException();
+            return false;
+            //return nizRiječi.Contains(tražena);
+            //throw new NotImplementedException();
         }
 
         public static int Zbroj(IEnumerable<int> brojevi)
         {
-            // TODO:111 Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
+            // 111 Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
+            int zbroj = 0;
+            foreach (var broj in brojevi)
+            {
+                zbroj += broj;
+            }
 
-            throw new NotImplementedException();
+            return zbroj;
+            //throw new NotImplementedException();
         }
 
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
-            // TODO:112 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
+            // 112 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
+            List<string> sviIza = new List<string>();
+            foreach (var riječ in nizRiječi)
+            {
+                int n = Math.Min(graničnaRiječ.Length, riječ.Length);
+                for (int i = 0; i < n; i++)
+                {
+                    if (graničnaRiječ[i] < riječ[i])
+                    {
+                        sviIza.Add(riječ);
+                        break;
+                    }
+                    if (graničnaRiječ[i] > riječ[i])
+                    {
+                        break;
+                    }
+                }
+            }
 
-            throw new NotImplementedException();
+            return sviIza;
+            //throw new NotImplementedException();
         }
 
-        // TODO:113 Pokrenuti program i provjeriti ispise
+        // 113 Pokrenuti program i provjeriti ispise
         
-        // TODO:114 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
+        // 114 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
     }
 }
