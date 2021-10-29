@@ -6,12 +6,20 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void PetljaFor(int n)
         {
-            // TODO:070 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+            // :070 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+            for (int i = 0; i <= n; i++)
+                Console.WriteLine(i);
         }
 
         public static void PetljaWhile(int n)
         {
-            // TODO:071 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            // :071 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
+            int i = 0;
+            while(i <= n)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
         }
 
         static void Main(string[] args)
@@ -25,10 +33,10 @@ namespace Vsite.CSharp.KontrolaToka
             Console.ReadKey();
         }
 
-        // TODO:072 Pokrenuti program te provjeriti ispise
+        // :072 Pokrenuti program te provjeriti ispise
 
-        // TODO:073 Programom ILDasm (Program Files (x86)\Microsoft SDKs\Windows\vNN.N\bin\NETFX N.N Tools\ildasm.exe) usporediti međukod metoda PetljaFor i PetljaWhile
+        // :073 Programom ILDasm (Program Files (x86)\Microsoft SDKs\Windows\vNN.N\bin\NETFX N.N Tools\ildasm.exe) usporediti međukod metoda PetljaFor i PetljaWhile
 
-        // TODO:074 Pokrenuti testove i projeriti prolaze li oba testa u grupi TestForVsWhile
+        // :074 Pokrenuti testove i projeriti prolaze li oba testa u grupi TestForVsWhile
     }
 }
