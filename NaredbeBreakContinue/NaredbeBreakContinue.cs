@@ -55,6 +55,6 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
-        // TODO:094 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
+        // 094 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
     }
 }
