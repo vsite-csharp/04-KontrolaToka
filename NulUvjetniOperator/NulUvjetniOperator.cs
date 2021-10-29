@@ -8,14 +8,13 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static string PozoviToString(object obj)
         {
-            // TODO:050 Korištenjem nul-uvjetnog (null conditional) operatora ?. vratiti rezultat metode ToString na prosljeđenom objektu ako je različit od nule, u protivnom vratiti nul-referencu
-
-            throw new NotImplementedException();
+            // Sqrt050 Korištenjem nul-uvjetnog (null conditional) operatora ?. vratiti rezultat metode ToString na prosljeđenom objektu ako je različit od nule, u protivnom vratiti nul-referencu
+            return obj?.ToString();
         }
 
-        // TODO:051 Pokrenuti program i provjeriti ispis
+        // Sqrt051 Pokrenuti program i provjeriti ispis
 
-        // TODO:052 Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
+        // Sqrt052 Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
 
         static void Main(string[] args)
         {
