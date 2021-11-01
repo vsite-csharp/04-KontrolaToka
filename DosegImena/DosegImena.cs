@@ -27,7 +27,7 @@ namespace Vsite.CSharp.KontrolaToka
                 //002 Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
                 //int a = 5;
             }
-            // TODO:003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
+            //003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
         }
 
         string a = "Član klase";
