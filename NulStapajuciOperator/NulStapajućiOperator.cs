@@ -6,11 +6,11 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void IspišiString(object obj)
         {
-            // Korištenjem Nul-stapajućeg (null-coalescing) operatora ?? ispisati sadržaj objekta ako je različit od null, inače ispisati "Nedefiniran"
+            //Korištenjem Nul-stapajućeg (null-coalescing) operatora ?? ispisati sadržaj objekta ako je različit od null, inače ispisati "Nedefiniran"
             Console.WriteLine(obj ?? "Nedefiniran");
         }
 
-        // Pokrenuti testove i provjeriti prolaze li sva 4 testa iz grupe TestNulStapajućegOperatora
+        //Pokrenuti testove i provjeriti prolaze li sva 4 testa iz grupe TestNulStapajućegOperatora
 
         static void Main(string[] args)
         {
