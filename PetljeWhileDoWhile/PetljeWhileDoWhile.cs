@@ -49,6 +49,6 @@ namespace Vsite.CSharp.KontrolaToka
             Console.ReadKey();
         }
 
-        //  Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
+        // Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
     }
 }
