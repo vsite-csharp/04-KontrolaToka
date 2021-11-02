@@ -59,8 +59,8 @@ namespace Vsite.CSharp.KontrolaToka
             }
         }
 
-        // Pokrenuti program i provjeriti ispravnost ispisa
+        //Pokrenuti program i provjeriti ispravnost ispisa
         
-        // Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestGrananjaSwitch
+        //Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestGrananjaSwitch
     }
 }
