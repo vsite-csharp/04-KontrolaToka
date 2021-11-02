@@ -15,17 +15,17 @@ namespace Vsite.CSharp.KontrolaToka
 
         // Pokrenuti program i provjeriti ispis
 
-        // Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
+        //Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
 
         static void Main(string[] args)
         {
             string ime = "Dinko";
             Console.WriteLine("Ispisujem string 'Dinko':");
-            Console.WriteLine(PozoviToString(ime)); // trebalo bi ispisati "Dinko"
+            Console.WriteLine(PozoviToString(ime)); //trebalo bi ispisati "Dinko"
 
             ime = null;
             Console.WriteLine("Ispisujem null-string:");
-            Console.WriteLine(PozoviToString(ime)); // trebalo bi ispisati prazan redak
+            Console.WriteLine(PozoviToString(ime)); //trebalo bi ispisati prazan redak
 
             object obj = null;
             Console.WriteLine("Ispisujem null-object:");
