@@ -44,8 +44,8 @@ namespace Vsite.CSharp.KontrolaToka
             throw new NotImplementedException();
         }
 
-        // Pokrenuti program i provjeriti ispise
+        //Pokrenuti program i provjeriti ispise
         
-        // Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
+        //Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
     }
 }
