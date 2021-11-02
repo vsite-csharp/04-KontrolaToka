@@ -39,7 +39,7 @@ namespace Vsite.CSharp.KontrolaToka
             //:112 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
             int counter = 0;
             var temp = nizRiječi.ToList();
-            List<int> to_del = new List<int>();
+    
             foreach(string el in nizRiječi)
             {
                 if (el.CompareTo(graničnaRiječ)<0)
