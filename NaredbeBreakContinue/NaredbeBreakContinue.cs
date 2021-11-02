@@ -33,7 +33,7 @@ namespace Vsite.CSharp.KontrolaToka
             return zbroj;
         }
 
-        // Pokrenuti program i provjeriti ispise
+        //Pokrenuti program i provjeriti ispise
 
         static void Main(string[] args)
         {
@@ -47,6 +47,6 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
-        // Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
+        //Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
     }
 }
