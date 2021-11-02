@@ -28,7 +28,7 @@ namespace Vsite.CSharp.KontrolaToka
             riječi = new string[] { "more", "sunce", "rijeka", "mjesec", "potok", "barka" };
             Foreach.Ispiši(riječi);
 
-            string granična = "student";
+           string granična = "student";
             Console.WriteLine($"sljedeće riječi su abecedno iza riječi '{granična}':");
             foreach (string riječ in Pretraga.NađiSveIza(riječi, granična))
                 Console.WriteLine(riječ);
