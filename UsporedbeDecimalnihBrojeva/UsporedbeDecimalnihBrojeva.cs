@@ -50,6 +50,6 @@ namespace Vsite.CSharp.KontrolaToka
             return razlika / manji < epsilon;
         }
 
-        // TODO:022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
+        // 022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
     }
 }

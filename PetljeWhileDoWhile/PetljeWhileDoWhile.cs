@@ -10,8 +10,8 @@ namespace Vsite.CSharp.KontrolaToka
             int brojBacanja = 0;
             int bačeniBroj = 0;
 
-            // TODO:080 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
-
+            // 080 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
+            while(bačeniBroj != 6)
             {
                 ++brojBacanja;
                 bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
@@ -26,13 +26,16 @@ namespace Vsite.CSharp.KontrolaToka
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
 
             // TODO:081 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
-
+            brojPređenihPolja = 0;
+            do
             {
                 int bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"Bacanje: {bačeniBroj}");
                 brojPređenihPolja += bačeniBroj;
                 Console.WriteLine($"Ukupno: {brojPređenihPolja}");
             }
+            while (brojPređenihPolja < 12);
+
             return brojPređenihPolja;
         }
 
