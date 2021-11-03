@@ -10,7 +10,7 @@ namespace Vsite.CSharp.KontrolaToka
         static void Main(string[] args)
         {
             Console.WriteLine("Kvadrati brojeva:");
-            // TODO:120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
+            // :120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
             foreach (var kvadrat in DajKvadrate())
                 Console.WriteLine(kvadrat);
 
