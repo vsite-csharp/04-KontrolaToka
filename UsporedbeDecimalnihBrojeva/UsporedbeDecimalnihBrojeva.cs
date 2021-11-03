@@ -8,7 +8,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             double tri = 3.0;
 
-            // TODO:020 Provjeriti što će ispisati donje usporedbe.
+            // :020 Provjeriti što će ispisati donje usporedbe.
             if (JednakiSu(1.0, 1.00001))
                 Console.WriteLine("1.0 je jednako 1.00001");
             else
