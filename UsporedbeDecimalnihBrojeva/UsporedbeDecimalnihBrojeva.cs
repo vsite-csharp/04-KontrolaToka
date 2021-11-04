@@ -38,7 +38,7 @@ namespace Vsite.CSharp.KontrolaToka
             Console.ReadKey();
         }
 
-        // TODO:021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+        // :021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
         {
             
@@ -54,6 +54,6 @@ namespace Vsite.CSharp.KontrolaToka
                 
         }
 
-        // TODO:022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
+        // :022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
     }
 }

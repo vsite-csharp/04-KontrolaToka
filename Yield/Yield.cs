@@ -10,8 +10,8 @@ namespace Vsite.CSharp.KontrolaToka
         static void Main(string[] args)
         {
             Console.WriteLine("Kvadrati brojeva:");
-            // TODO:120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
-            foreach (var kvadrat in DajKvadrate())
+            // :120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
+            foreach (var kvadrat in DajKvadrate())  // F9-breakpoint
                 Console.WriteLine(kvadrat);
 
             Console.WriteLine();
@@ -49,7 +49,7 @@ namespace Vsite.CSharp.KontrolaToka
             int trenutni = 1;
             while (prethodni < int.MaxValue / 2)
             {
-                // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                //DZ(u postavkama ukljucit opciju Build, Advanced , check for aritmetic overflow) :121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
                 int zbroj = prethodni + trenutni;
                 prethodni = trenutni;
@@ -59,10 +59,41 @@ namespace Vsite.CSharp.KontrolaToka
             return rezultat;
         }
 
-        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+        // :122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+
+
+            List<int> rezultat = new List<int>();
+            rezultat.Add(0);
+            rezultat.Add(1);
+
+            yield return 0;
+            yield return 1;
+            int prethodni = 0;
+            int trenutni = 1;
+
+            while (true)
+            {
+               
+                try
+                {
+
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                 
+
+
+                }
+                catch (OverflowException)
+                {
+                    yield break;
+                }
+                yield return trenutni;
+
+            }
+            
         }
 
         // TODO:123 Pokrenuti program i provjeriti ispise
