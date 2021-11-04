@@ -10,7 +10,7 @@ namespace Vsite.CSharp.KontrolaToka
         static void Main(string[] args)
         {
             Console.WriteLine("Kvadrati brojeva:");
-            // TODO:120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
+            // 120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
             foreach (var kvadrat in DajKvadrate())
                 Console.WriteLine(kvadrat);
 
@@ -59,14 +59,35 @@ namespace Vsite.CSharp.KontrolaToka
             return rezultat;
         }
 
-        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+        // 122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+            yield return 0;
+            yield return 1;
+            int prethodni = 0;
+            int trenutni = 1;
+            while (true)
+            {
+                // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    
+                }
+                catch (OverflowException)
+                {
+                    yield break;
+                }
+                yield return trenutni;
+
+            }
         }
 
-        // TODO:123 Pokrenuti program i provjeriti ispise
+        // 123 Pokrenuti program i provjeriti ispise
 
-        // TODO:124 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
+        // 124 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
 }
