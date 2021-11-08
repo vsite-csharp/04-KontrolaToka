@@ -49,7 +49,7 @@ namespace Vsite.CSharp.KontrolaToka
                 }
                 counter++;
             }
-            return temp;
+            return (IEnumerable<string>)temp;
             //throw new NotImplementedException();
         }
 
