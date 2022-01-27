@@ -2,6 +2,7 @@
 
 namespace Vsite.CSharp.KontrolaToka
 {
+
     class ForVsWhile
     {
         public static void PetljaFor(int n)
