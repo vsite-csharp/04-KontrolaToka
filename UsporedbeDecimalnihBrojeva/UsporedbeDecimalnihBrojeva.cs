@@ -59,6 +59,6 @@ namespace Vsite.CSharp.KontrolaToka
             return Math.Abs(broj1 - broj2) < Math.Abs(broj1 + broj2) / 1e10;
         }
 
-        // TODO:022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
+        // 022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
     }
 }
