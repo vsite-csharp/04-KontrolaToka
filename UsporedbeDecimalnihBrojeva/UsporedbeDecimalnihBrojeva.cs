@@ -8,7 +8,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             double tri = 3.0;
 
-            // TODO:020 Provjeriti što će ispisati donje usporedbe.
+            // 020 Provjeriti što će ispisati donje usporedbe.
             IspišiJesuLiJednaki(1.0, 1.0001);
 
             IspišiJesuLiJednaki(-1e-25, -1.00001e-25);
@@ -51,12 +51,14 @@ namespace Vsite.CSharp.KontrolaToka
             }
         }
 
-        // TODO:021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+        // 021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return broj1 == broj2;
+            if (broj1 == broj2)
+                return true;
+            return Math.Abs(broj1 - broj2) < Math.Abs((broj1 + broj2) / 1e10);
         }
 
-        // TODO:022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
+        // 022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
     }
 }
