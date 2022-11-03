@@ -51,7 +51,7 @@ namespace Vsite.CSharp.KontrolaToka
             }
         }
 
-        // TODO:021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+        // TPromijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
         {
             if(broj1 == broj2)
