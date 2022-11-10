@@ -33,6 +33,6 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
-        // TODO:102 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
+        // :102 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
     }
 }
