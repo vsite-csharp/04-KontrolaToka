@@ -36,35 +36,37 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "13", "13", "{6E2810DD-63D2-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02", "02", "{96387141-6FE5-4885-BA40-984CFD2E45BE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DosegImena", "DosegImena\DosegImena.csproj", "{64EB4FBC-8E25-4291-AF1D-0B04BDAB741B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DosegImena", "DosegImena\DosegImena.csproj", "{64EB4FBC-8E25-4291-AF1D-0B04BDAB741B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrananjeIf", "GrananjeIf\GrananjeIf.csproj", "{EAD36D1C-84B2-48F7-93FB-F3582FBD05E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrananjeIf", "GrananjeIf\GrananjeIf.csproj", "{EAD36D1C-84B2-48F7-93FB-F3582FBD05E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsporedbeDecimalnihBrojeva", "UsporedbeDecimalnihBrojeva\UsporedbeDecimalnihBrojeva.csproj", "{B00308FE-4DE9-4BF6-8C07-8EB66ADBB666}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UsporedbeDecimalnihBrojeva", "UsporedbeDecimalnihBrojeva\UsporedbeDecimalnihBrojeva.csproj", "{B00308FE-4DE9-4BF6-8C07-8EB66ADBB666}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UvjetnoPridruživanje", "UvjetnoPridruzivanje\UvjetnoPridruživanje.csproj", "{70A0AEC6-9F2F-4FA2-AFAD-1A3BDE50BE9E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UvjetnoPridruživanje", "UvjetnoPridruzivanje\UvjetnoPridruživanje.csproj", "{70A0AEC6-9F2F-4FA2-AFAD-1A3BDE50BE9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NulStapajućiOperator", "NulStapajuciOperator\NulStapajućiOperator.csproj", "{5F9CF423-1B8E-465C-B8F3-147D10F97268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NulStapajućiOperator", "NulStapajuciOperator\NulStapajućiOperator.csproj", "{5F9CF423-1B8E-465C-B8F3-147D10F97268}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NulUvjetniOperator", "NulUvjetniOperator\NulUvjetniOperator.csproj", "{AEDD044F-A752-46C3-AFF3-A99C4B458681}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NulUvjetniOperator", "NulUvjetniOperator\NulUvjetniOperator.csproj", "{AEDD044F-A752-46C3-AFF3-A99C4B458681}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrananjeSwitch", "GrananjeSwitch\GrananjeSwitch.csproj", "{3BA50C76-F474-4709-98BD-42F2D1882B93}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrananjeSwitch", "GrananjeSwitch\GrananjeSwitch.csproj", "{3BA50C76-F474-4709-98BD-42F2D1882B93}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ForVsWhile", "ForVsWhile\ForVsWhile.csproj", "{CD6FD7EB-AF4A-4D9F-AE7F-723AAC50D6AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ForVsWhile", "ForVsWhile\ForVsWhile.csproj", "{CD6FD7EB-AF4A-4D9F-AE7F-723AAC50D6AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetljeWhileDoWhile", "PetljeWhileDoWhile\PetljeWhileDoWhile.csproj", "{4D50A0F7-E9F0-42E6-B67D-9E6BA01F8DE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PetljeWhileDoWhile", "PetljeWhileDoWhile\PetljeWhileDoWhile.csproj", "{4D50A0F7-E9F0-42E6-B67D-9E6BA01F8DE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NaredbeBreakContinue", "NaredbeBreakContinue\NaredbeBreakContinue.csproj", "{69109B75-0D91-43DD-A7C5-7B4B52848BEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NaredbeBreakContinue", "NaredbeBreakContinue\NaredbeBreakContinue.csproj", "{69109B75-0D91-43DD-A7C5-7B4B52848BEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Foreach", "Foreach\Foreach.csproj", "{D195BA31-C96D-4F38-849F-9C5767FA1008}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Foreach", "Foreach\Foreach.csproj", "{D195BA31-C96D-4F38-849F-9C5767FA1008}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MetodeProširenja", "MetodeProsirenja\MetodeProširenja.csproj", "{B889A713-7CEC-4A5F-BC91-77F16EA455D4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MetodeProširenja", "MetodeProsirenja\MetodeProširenja.csproj", "{B889A713-7CEC-4A5F-BC91-77F16EA455D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Yield", "Yield\Yield.csproj", "{0DB1AE82-BCCA-4704-9F59-B8993FEF69D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Yield", "Yield\Yield.csproj", "{0DB1AE82-BCCA-4704-9F59-B8993FEF69D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NeograničeniNizYield", "NeograniceniNizYield\NeograničeniNizYield.csproj", "{D587B1EE-DE11-4131-A31E-0D1D8F2CA17B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NeograničeniNizYield", "NeograniceniNizYield\NeograničeniNizYield.csproj", "{D587B1EE-DE11-4131-A31E-0D1D8F2CA17B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Testovi", "Testovi\Testovi.csproj", "{0F9889A7-4C63-4D94-8B58-1C3CAF731AAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testovi", "Testovi\Testovi.csproj", "{0F9889A7-4C63-4D94-8B58-1C3CAF731AAA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NoviSwitch", "ConsoleApp1\NoviSwitch.csproj", "{CB2E86C3-13BE-40AE-A5A6-B216CFCFE1BC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -132,6 +134,10 @@ Global
 		{0F9889A7-4C63-4D94-8B58-1C3CAF731AAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0F9889A7-4C63-4D94-8B58-1C3CAF731AAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0F9889A7-4C63-4D94-8B58-1C3CAF731AAA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB2E86C3-13BE-40AE-A5A6-B216CFCFE1BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB2E86C3-13BE-40AE-A5A6-B216CFCFE1BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB2E86C3-13BE-40AE-A5A6-B216CFCFE1BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB2E86C3-13BE-40AE-A5A6-B216CFCFE1BC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -151,6 +157,7 @@ Global
 		{B889A713-7CEC-4A5F-BC91-77F16EA455D4} = {3C7EA05B-AA7F-462B-AD6C-E6B6CE54C77D}
 		{0DB1AE82-BCCA-4704-9F59-B8993FEF69D8} = {42639DAA-DC06-4394-B4CF-62DD018BB8F6}
 		{D587B1EE-DE11-4131-A31E-0D1D8F2CA17B} = {6E2810DD-63D2-47D2-97DC-46276748A8D4}
+		{CB2E86C3-13BE-40AE-A5A6-B216CFCFE1BC} = {AF75D08A-6426-473E-A0DF-6FA7C6C21A49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65ABF471-3C29-406C-8445-F00F671C9C4E}

@@ -55,6 +55,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         // :064 Pokrenuti program i provjeriti ispravnost ispisa
         
-        // TODO:065 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestGrananjaSwitch
+        // :065 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestGrananjaSwitch
     }
 }
