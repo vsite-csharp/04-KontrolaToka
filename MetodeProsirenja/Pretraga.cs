@@ -37,6 +37,6 @@ namespace Vsite.CSharp.KontrolaToka
 
         // :113 Pokrenuti program i provjeriti ispise
         
-        // TODO:114 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
+        // :114 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestMetodaProširenja
     }
 }
