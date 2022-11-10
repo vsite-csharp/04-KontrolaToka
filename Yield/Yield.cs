@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Vsite.CSharp.KontrolaToka
@@ -47,22 +48,58 @@ namespace Vsite.CSharp.KontrolaToka
 
             int prethodni = 0;
             int trenutni = 1;
+            try
+            {
+                while (prethodni < int.MaxValue / 2)
+                {
+                    // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                    // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+            }
+
+            catch (OverflowException)
+            {
+                Console.WriteLine("Overflow");
+            }
+            return rezultat;
+
+        }
+
+
+        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+        public static IEnumerable<int> FibonacciIEnumerable(int trenutni)
+        {
+            int prethodni= 0;
+            yield return 0;
+
+            yield return 1;
+
             while (prethodni < int.MaxValue / 2)
             {
                 // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
+                
+                int zbroj = prethodni
+                try
+                {
+                    zbroj += trenutni;
+                }
+
+                catch (OverflowException)
+                {
+                    yield break;
+                }
+
                 prethodni = trenutni;
                 trenutni = zbroj;
-                rezultat.Add(trenutni);
+                yield return trnutni;
             }
-            return rezultat;
-        }
 
-        // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
-        public static IEnumerable<int> FibonacciIEnumerable()
-        {
-            throw new NotImplementedException();
+
         }
 
         // TODO:123 Pokrenuti program i provjeriti ispise
