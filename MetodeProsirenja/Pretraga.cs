@@ -11,6 +11,15 @@ namespace Vsite.CSharp.KontrolaToka
         {
             // TODO:110 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
             // (za jednostavnije rješenje, pogledati https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable)
+            /*
+            foreach (var riječ in nizRiječi) {
+                if (riječ == tražena)
+                {
+                    return true;
+                }
+            }*/
+
+            return nizRiječi.Contains(tražena);
 
             throw new NotImplementedException();
         }
@@ -19,12 +28,15 @@ namespace Vsite.CSharp.KontrolaToka
         {
             // TODO:111 Napisati kod koji će zbrojiti sve članove kolekcije cijelih brojeva i vratiti taj zbroj kao rezultat
 
+            return brojevi.Sum();
             throw new NotImplementedException();
         }
 
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
             // TODO:112 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
+
+            return nizRiječi.Where(rijec => String.Compare(rijec, graničnaRiječ) > 0);
 
             throw new NotImplementedException();
         }
