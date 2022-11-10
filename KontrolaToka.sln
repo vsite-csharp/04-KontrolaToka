@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.3.32929.385
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{8049C9B6-BE0A-4EC3-A728-62CDE82FE2A6}"
 	ProjectSection(SolutionItems) = preProject
@@ -67,6 +67,8 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testovi", "Testovi\Testovi.csproj", "{0F9889A7-4C63-4D94-8B58-1C3CAF731AAA}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoviSwitch", "NoviSwitch\NoviSwitch.csproj", "{EADAD8D4-9F96-4FED-A8D8-999DCC604235}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Novi switch", "Novi switch\Novi switch.csproj", "{C775A8B3-1CA1-4AC5-B63B-C6D3FA63C1CB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -138,6 +140,10 @@ Global
 		{EADAD8D4-9F96-4FED-A8D8-999DCC604235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EADAD8D4-9F96-4FED-A8D8-999DCC604235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EADAD8D4-9F96-4FED-A8D8-999DCC604235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C775A8B3-1CA1-4AC5-B63B-C6D3FA63C1CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C775A8B3-1CA1-4AC5-B63B-C6D3FA63C1CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C775A8B3-1CA1-4AC5-B63B-C6D3FA63C1CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C775A8B3-1CA1-4AC5-B63B-C6D3FA63C1CB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +164,7 @@ Global
 		{0DB1AE82-BCCA-4704-9F59-B8993FEF69D8} = {42639DAA-DC06-4394-B4CF-62DD018BB8F6}
 		{D587B1EE-DE11-4131-A31E-0D1D8F2CA17B} = {6E2810DD-63D2-47D2-97DC-46276748A8D4}
 		{EADAD8D4-9F96-4FED-A8D8-999DCC604235} = {AF75D08A-6426-473E-A0DF-6FA7C6C21A49}
+		{C775A8B3-1CA1-4AC5-B63B-C6D3FA63C1CB} = {AF75D08A-6426-473E-A0DF-6FA7C6C21A49}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {65ABF471-3C29-406C-8445-F00F671C9C4E}
