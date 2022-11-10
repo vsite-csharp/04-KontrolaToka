@@ -7,6 +7,10 @@ namespace Vsite.CSharp.KontrolaToka
         public static void PetljaFor(int n)
         {
             // TODO:070 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
+            for (int i = 0;  <; ++)
+            {
+
+            }
         }
 
         public static void PetljaWhile(int n)
