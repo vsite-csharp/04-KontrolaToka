@@ -15,7 +15,7 @@ namespace Vsite.CSharp.KontrolaToka
             }
         }
 
-        // TODO:101 Pokrenuti program i provjeriti ispise
+        // :101 Pokrenuti program i provjeriti ispise
 
         public static void Main(string[] args)
         {
@@ -33,6 +33,6 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
-        // TODO:102 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
+        // :102 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
     }
 }
