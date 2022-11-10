@@ -28,6 +28,8 @@ namespace Vsite.CSharp.KontrolaToka
             List<double> dablovi = new List<double> { 3.14, 4.15, 2.78 };
             Ispiši(dablovi);
 
+            //Ispiši(12);
+
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
