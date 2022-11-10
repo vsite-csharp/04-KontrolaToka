@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 
 namespace Vsite.CSharp.KontrolaToka
@@ -10,7 +11,7 @@ namespace Vsite.CSharp.KontrolaToka
         static void Main(string[] args)
         {
             Console.WriteLine("Kvadrati brojeva:");
-            // TODO:120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
+            // :120 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
             foreach (var kvadrat in DajKvadrate())
                 Console.WriteLine(kvadrat);
 
@@ -47,22 +48,55 @@ namespace Vsite.CSharp.KontrolaToka
 
             int prethodni = 0;
             int trenutni = 1;
-            while (prethodni < int.MaxValue / 2)
+
+            try
             {
-                // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
-                // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
-                prethodni = trenutni;
-                trenutni = zbroj;
-                rezultat.Add(trenutni);
+                while (prethodni < int.MaxValue / 2)
+                {
+                    // TODO:121 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                    // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+                
             }
+            catch (OverflowException)
+            {
+
+            }
+
             return rezultat;
         }
 
         // TODO:122 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+            yield return 0;
+            yield return 1;
+            
+            int prethodni = 0;
+            int trenutni = 1;
+           
+                while (prethodni < int.MaxValue/2)
+                {
+                int zbroj = prethodni;
+                try
+                {
+                    zbroj += trenutni;
+                }
+                   catch (OverflowException)
+                {
+                    yield break;
+                }
+                prethodni = trenutni;
+                trenutni = zbroj;
+                yield return trenutni;
+
+            }
+         
+           
         }
 
         // TODO:123 Pokrenuti program i provjeriti ispise
