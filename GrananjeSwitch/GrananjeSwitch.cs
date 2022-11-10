@@ -7,7 +7,7 @@ namespace Vsite.CSharp.KontrolaToka
     {
         static void Main(string[] args)
         {
-            CultureInfo kultura = new CultureInfo("hr");
+            CultureInfo kultura = new CultureInfo("de");
             string formatDatuma = kultura.DateTimeFormat.ShortDatePattern;
 
             Console.WriteLine("Unesite neki datum u obliku {0}", formatDatuma);
