@@ -19,10 +19,14 @@ namespace Vsite.CSharp.KontrolaToka
                 DayOfWeek danUTjednu = datum.DayOfWeek;
 
                 Console.WriteLine("Taj datum je {0}", IspisDana.ImeDana(danUTjednu));
-                // ovo je jednostavniji način za ispis dana u tjednu!!!
-                Console.WriteLine("Taj datum je {0}", datum.ToString("dddd", kultura));
+                // ovo je jednostavniji način za ispis dana u tjednu:
+                //Console.WriteLine("Taj datum je {0}", datum.ToString("dddd", kultura));
 
                 Console.WriteLine("Taj dan je {0}", IspisDana.RadniNeradni(danUTjednu));
+            }
+            catch (NotImplementedException)
+            {
+                Console.WriteLine("Metoda nije implementirana!");
             }
             catch (Exception)
             {
