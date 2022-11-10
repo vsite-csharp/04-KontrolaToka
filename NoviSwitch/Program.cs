@@ -33,7 +33,7 @@ namespace NoviSwitch
         {
             Osoba o = new Osoba("Pero");
             IspišiOsobu(o);
-            Student s = new Student("Janko", 3);
+            Student s = new Student("Iva", 3);
             IspišiOsobu(s);
             s.PoložiGodinu();
             s.PoložiGodinu();
@@ -47,8 +47,8 @@ namespace NoviSwitch
                 case Student s when s.Godina > 4:
                     Console.WriteLine($"Student: {o.Ime} je diplomirao");
                     break;
-                case Student s:
-                    Console.WriteLine($"Student: {o.Ime}, {s.Godina}. godina");
+                case Student s when s.Godina == 1:
+                    Console.WriteLine($"Student: {o.Ime}, {s.Godina}. brucoš");
                     break;
                 case Osoba o1:
                     Console.WriteLine($"Osoba: {o1.Ime}");
