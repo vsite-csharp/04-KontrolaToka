@@ -10,7 +10,7 @@ namespace Vsite.CSharp.KontrolaToka
             Console.WriteLine(obj ?? "Nedefiniran");
         }
 
-        // TODO:041 Pokrenuti testove i provjeriti prolaze li sva 4 testa iz grupe TestNulStapajućegOperatora
+        // :041 Pokrenuti testove i provjeriti prolaze li sva 4 testa iz grupe TestNulStapajućegOperatora
 
         static void Main(string[] args)
         {
