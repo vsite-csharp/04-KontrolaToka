@@ -1,4 +1,6 @@
-﻿namespace Vsite.CSharp.KontrolaToka
+﻿using System.Threading.Channels;
+
+namespace Vsite.CSharp.KontrolaToka
 {
     static class UsporedbeDecimalnihBrojeva
     {
@@ -6,7 +8,7 @@
         {
             double tri = 3.0;
 
-            // TODO:020 Provjeriti što će ispisati donje usporedbe.
+            // :020 Provjeriti što će ispisati donje usporedbe.
             IspišiJesuLiJednaki(1.0, 1.0001);
 
             IspišiJesuLiJednaki(-1e-25, -1.00001e-25);
@@ -21,7 +23,7 @@
             {
                 Console.WriteLine("1 - 1/3 nije jednako 2/3!");
             }
-            //IspišiJesuLiJednaki((1.0 - 1.0 / tri), (2.0 / tri));
+            IspišiJesuLiJednaki((1.0 - 1.0 / tri), (2.0 / tri));
 
             if (JednakiSu(tri * 0.1, 0.3))
             { 
@@ -49,12 +51,13 @@
             }
         }
 
-        // TODO:021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
+
+        // :021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return broj1 == broj2;
+            return ((float)broj1 == (float)broj2);
         }
 
-        // TODO:022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
+        // :022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
     }
 }
