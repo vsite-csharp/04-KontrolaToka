@@ -53,6 +53,9 @@ namespace Vsite.CSharp.KontrolaToka
         {
             switch (s.Godina)
             {
+                case 1:
+                    Console.WriteLine($"{s.Ime} je brucoš");
+                    break;
                 // TODO:070 Dodati case za studenta 1. godine koji će ispisati $"{s.Ime} je brucoš". Pokrenuti program i provjeriti ispis.
 
                 // TODO:071 Dodati case za studente do 3. godine koji će ispisati $"{s.Ime} je student {s.Godina}. godine prediplomskog studija". Pokrenuti program i provjeriti ispis.
