@@ -55,7 +55,9 @@ namespace Vsite.CSharp.KontrolaToka
         // :021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
         {
-            return ((float)broj1 == (float)broj2);
+
+            return ((float)broj1 == (float)broj2); //ovo radi jer daleko manje bitova uspoređujemo... 
+
         }
 
         // :022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
