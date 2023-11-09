@@ -61,10 +61,10 @@ namespace Vsite.CSharp.KontrolaToka
                 case 1:
                     Console.WriteLine($"{s.Ime} je brucoš");
                     break;
-                case  < 3:
+                case <= 3:
                     Console.WriteLine($"{s.Ime} je student {s.Godina}. godine prediplomskog studija");
                     break;
-                case > 3:
+                case >= 3:
                     Console.WriteLine($"{s.Ime} je student {s.Godina - 3}. godine diplomskog studija");
                     break;
                     // 071 Dodati case za studente do 3. godine koji će ispisati $"{s.Ime} je student {s.Godina}. godine prediplomskog studija". Pokrenuti program i provjeriti ispis.
