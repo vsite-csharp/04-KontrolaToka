@@ -11,9 +11,9 @@ namespace Vsite.CSharp.KontrolaToka
             //throw new NotImplementedException();
         }
 
-        // TODO:051 Pokrenuti program i provjeriti ispis
+        // 051 Pokrenuti program i provjeriti ispis
 
-        // TODO:052 Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
+        // 052 Pokrenuti testove i provjeriti prolaze li sva 3 testa iz grupe TestNulUvjetnogOperatora
 
         static void Main(string[] args)
         {
