@@ -16,15 +16,16 @@ namespace Vsite.CSharp.KontrolaToka
         {
             string a = "Lokalna varijabla";
 
-            // TODO:000 Ispisati vrijednosti lokalne varijable a
+            // DID_IT:000 Ispisati vrijednosti lokalne varijable a
+            Console.WriteLine(a);
 
-            // TODO:001 Ispisati vrijednost člana klase a
-
+            // DID_IT:001 Ispisati vrijednost člana klase a
+            Console.WriteLine(this.a);
             {
-                // TODO:002 Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
-
+                // DID_IT:002 Definirati novu varijablu a unutar ovog bloka i ispisati njenu vrijednost
+                int b = 5; 
             }
-            // TODO:003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
+            // DID_IT:003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
         }
 
         readonly string a = "Član klase";
