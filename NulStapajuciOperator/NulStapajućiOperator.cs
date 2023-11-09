@@ -1,13 +1,16 @@
-﻿namespace Vsite.CSharp.KontrolaToka
+﻿using System.Threading.Channels;
+
+namespace Vsite.CSharp.KontrolaToka
 {
     static class NulStapajućiOperator
     {
         public static void IspišiString(object? obj)
         {
-            // TODO:040 Korištenjem Nul-stapajućeg (null-coalescing) operatora ?? ispisati sadržaj objekta ako je različit od null, inače ispisati "Nedefiniran"
+            // DID_IT:040 Korištenjem Nul-stapajućeg (null-coalescing) operatora ?? ispisati sadržaj objekta ako je različit od null, inače ispisati "Nedefiniran"
+            Console.WriteLine(obj ?? "Nedefiniran");
         }
 
-        // TODO:041 Pokrenuti testove i provjeriti prolaze li sva 4 testa iz grupe TestNulStapajućegOperatora
+        // DID_IT:041 Pokrenuti testove i provjeriti prolaze li sva 4 testa iz grupe TestNulStapajućegOperatora
 
         static void Main(string[] args)
         {
