@@ -58,6 +58,7 @@ namespace Vsite.CSharp.KontrolaToka
                     break;
                 // TODO:070 Dodati case za studenta 1. godine koji će ispisati $"{s.Ime} je brucoš". Pokrenuti program i provjeriti ispis.
 
+
                 // TODO:071 Dodati case za studente do 3. godine koji će ispisati $"{s.Ime} je student {s.Godina}. godine prediplomskog studija". Pokrenuti program i provjeriti ispis.
 
                 // TODO:072 Dodati case za studente više od 3. godine koji će ispisati $"{s.Ime} je student {s.Godina - 3}. godine diplomskog studija". Pokrenuti program i provjeriti ispis.
