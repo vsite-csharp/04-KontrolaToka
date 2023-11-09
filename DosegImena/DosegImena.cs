@@ -25,7 +25,8 @@ namespace Vsite.CSharp.KontrolaToka
                 //int a = 7;
                 //for (int a = );
             }
-            // TODO:003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
+            // 003 Pokrenuti testove i provjeriti je li prošao test u grupi TestDosegaImena
+            // +
         }
 
         readonly string a = "Član klase";
