@@ -46,7 +46,7 @@
                 case DayOfWeek.Sunday:
                     return "vikend";
                 default:
-                    throw new System.ArgumentOutOfRangeException();
+                    throw new ArgumentOutOfRangeException();
             }
         }
 
