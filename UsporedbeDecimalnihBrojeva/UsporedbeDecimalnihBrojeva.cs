@@ -1,4 +1,6 @@
-﻿namespace Vsite.CSharp.KontrolaToka
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace Vsite.CSharp.KontrolaToka
 {
     static class UsporedbeDecimalnihBrojeva
     {
@@ -50,9 +52,14 @@
 
         // TODO:021 Promijeniti metodu JednakiSu tako da se dobije očekivani rezultat
         public static bool JednakiSu(double broj1, double broj2)
-        {
-            return broj1 == broj2;
+        { 
+            if(broj1 == broj2)
+            {
+                return true;
+            }
+            return Math.Abs((broj1 - broj2)) / Math.Abs(Math.Max(broj1, broj2)) < 1e-10;
         }
+        
 
         // TODO:022 Pokrenuti testove i provjeriti prolaze li 2 testa iz grupe TestUsporedbeDecimalnihBrojeva
     }
