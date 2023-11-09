@@ -19,7 +19,7 @@ namespace Vsite.CSharp.KontrolaToka
 
                 Console.WriteLine("Taj datum je {0}", IspisDana.ImeDana(danUTjednu));
                 // ovo je jednostavniji način za ispis dana u tjednu:
-                //Console.WriteLine("Taj datum je {0}", datum.ToString("dddd", kultura));
+                Console.WriteLine("Taj datum je {0}", datum.ToString("dddd", kultura));
 
                 Console.WriteLine("Taj dan je {0}", IspisDana.RadniNeradni(danUTjednu));
             }
