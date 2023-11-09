@@ -37,6 +37,10 @@
             }
             // 3. provjeriti je li broj djeljiv s 5. 
             //    Ako je broj djeljiv, treba ispisati poruku "broj je djeljiv s 5", a inače
+            else if (broj % 5 == 0)
+            {
+                Console.WriteLine("broj je djeljiv s 5");
+            }
             // 4. treba ispisati "broj nije djeljiv s 2, 3 niti 5"
             else
             {
@@ -45,7 +49,7 @@
 
             // :011 Pokrenuti program nekoliko puta i upisom različitih brojeva provjeriti ispravnost koda
 
-            // TODO:012 Pokrenuti testove i provjeriti prolaze li 4 testa iz grupe TestGrananjaIf
+            // :012 Pokrenuti testove i provjeriti prolaze li 4 testa iz grupe TestGrananjaIf
         }
     }
 }
