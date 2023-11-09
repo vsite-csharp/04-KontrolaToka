@@ -18,10 +18,25 @@
         {
             switch (danUTjednu)
             {
+                case DayOfWeek.Monday:
+                    return "ponedjeljak";
+                case DayOfWeek.Tuesday:
+                    return "utorak";
+                case DayOfWeek.Wednesday:
+                    return "srijeda";
+                case DayOfWeek.Thursday:
+                    return "četvrtak";
+                case DayOfWeek.Friday:
+                    return "petak";
+                case DayOfWeek.Saturday:
+                    return "subota";
+                case DayOfWeek.Sunday:
+                    return "nedjelja";
                 // TODO:062 Napisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
 
                 // TODO:063 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
                 default:
+                    return "";
                     throw new NotImplementedException();
             }
         }
