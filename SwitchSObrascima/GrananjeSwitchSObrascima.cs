@@ -36,7 +36,7 @@ namespace Vsite.CSharp.KontrolaToka
             Osoba o = new Osoba("Pero");
             IspišiOsobu(o);
             
-            Student s = new Student("Janko", 1);
+            Student s = new Student("Janko", 5);
             IspišiOsobu(s);
             
             IspišiStudenta(s);
