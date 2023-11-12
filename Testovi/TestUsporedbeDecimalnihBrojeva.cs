@@ -41,11 +41,11 @@
         [TestMethod]
         public void UsporedbaDvaVrloVelikaBroja()
         {
-            Assert.IsFalse(UsporedbeDecimalnihBrojeva.JednakiSu(-1e34, -1.00001e34));
-            Assert.IsFalse(UsporedbeDecimalnihBrojeva.JednakiSu(1e34, 1.00001e34));
-            Assert.IsFalse(UsporedbeDecimalnihBrojeva.JednakiSu(1e34, -1e34));
-            Assert.IsTrue(UsporedbeDecimalnihBrojeva.JednakiSu(-1e34, -1e34));
-            Assert.IsTrue(UsporedbeDecimalnihBrojeva.JednakiSu(1e34, 1e34));
+            Assert.IsFalse(UsporedbeDecimalnihBrojeva.JednakiSu(-1e40, -1.00001e40));
+            Assert.IsFalse(UsporedbeDecimalnihBrojeva.JednakiSu(1e40, 1.00001e40));
+            Assert.IsFalse(UsporedbeDecimalnihBrojeva.JednakiSu(1e40, -1e40));
+            Assert.IsTrue(UsporedbeDecimalnihBrojeva.JednakiSu(-1e40, -1e40));
+            Assert.IsTrue(UsporedbeDecimalnihBrojeva.JednakiSu(1e40, 1e40));
         }
     }
 }
