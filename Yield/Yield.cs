@@ -49,13 +49,20 @@
             int trenutni = 1;
             while (prethodni < int.MaxValue / 2)
             {
-                // TODO:131 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
-                prethodni = trenutni;
-                trenutni = zbroj;
-                rezultat.Add(trenutni);
-            }
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+                catch (OverflowException)
+                {
+                    break;
+                }
+               }
             return rezultat;
         }
 
@@ -65,8 +72,8 @@
             throw new NotImplementedException();
         }
 
-        // TODO:133 Pokrenuti program i provjeriti ispise
+        // Pokrenuti program i provjeriti ispise
 
-        // TODO:134 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
+        // Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
 }
