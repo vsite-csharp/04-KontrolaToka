@@ -68,6 +68,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Testovi", "Testovi\Testovi.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NoviSwitch", "NoviSwitch\NoviSwitch.csproj", "{EADAD8D4-9F96-4FED-A8D8-999DCC604235}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrananjeSwitchSObrascima", "SwitchSObrascima\GrananjeSwitchSObrascima.csproj", "{BBFAE6B6-344F-418C-8EEA-D8F37FA5073C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -138,6 +140,10 @@ Global
 		{EADAD8D4-9F96-4FED-A8D8-999DCC604235}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EADAD8D4-9F96-4FED-A8D8-999DCC604235}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EADAD8D4-9F96-4FED-A8D8-999DCC604235}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBFAE6B6-344F-418C-8EEA-D8F37FA5073C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBFAE6B6-344F-418C-8EEA-D8F37FA5073C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBFAE6B6-344F-418C-8EEA-D8F37FA5073C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBFAE6B6-344F-418C-8EEA-D8F37FA5073C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
