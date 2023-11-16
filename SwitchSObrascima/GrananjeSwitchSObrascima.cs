@@ -66,7 +66,7 @@ namespace Vsite.CSharp.KontrolaToka
                     break;
                 // :072 Dodati case za studente više od 3. godine koji će ispisati $"{s.Ime} je student {s.Godina - 3}. godine diplomskog studija". Pokrenuti program i provjeriti ispis.
                 case > 3:
-                    Console.WriteLine($"{s.Ime} je student {s.Godina - 3}. godine prediplomskog studija");
+                    Console.WriteLine($"{s.Ime} je student {s.Godina - 3}. godine diplomskog studija");
                     break;
             }
         }
@@ -77,14 +77,14 @@ namespace Vsite.CSharp.KontrolaToka
             {
                 // :073 Dodati case za objekt tipa Osoba koji će ispisati $"Osoba: {o.Ime}". Pokrenuti program i provjeriti ispis.
                 case Student s when s.Godina > 4:
-                    Console.WriteLine($"Student {o.Ime} je diplomirao ");
+                    Console.WriteLine($"Student: {o.Ime} je diplomirao");
                     break;
                 case Student s:
-                    Console.WriteLine($"Student {o.Ime}, {s.Godina}. godina ");
+                    Console.WriteLine($"Student: {o.Ime}, {s.Godina}. godina");
                     break;
                 // :074 Dodati case za objekt tipa Student koji koji će ispisati $"Student: {o.Ime}, {s.Godina}. godina". Pokrenuti program i provjeriti ispis.
                 case Osoba:
-                    Console.WriteLine($"Student {o.Ime}");
+                    Console.WriteLine($"Osoba: {o.Ime}");
                     break;
 
                     // :075 Dodati case za objekt tipa Student koji je na godini većoj od 4 koji će ispisati $"Student: {o.Ime} je diplomirao". Pokrenuti program i provjeriti ispis.
