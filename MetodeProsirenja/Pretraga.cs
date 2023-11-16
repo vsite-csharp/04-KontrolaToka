@@ -25,7 +25,7 @@
         public static IEnumerable<string> NađiSveIza(IEnumerable<string> nizRiječi, string graničnaRiječ)
         {
             // 122 Napisati kod koji će naći sve riječi iz kolekcije nizRiječi koje su abecedno iza riječi graničnaRiječ
-            return nizRiječi.Where
+            return nizRiječi.Where(clan => string.Compare(clan,graničnaRiječ, true)>0);
             throw new NotImplementedException();
         }
 
