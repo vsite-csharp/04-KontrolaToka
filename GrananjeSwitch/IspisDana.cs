@@ -38,12 +38,12 @@
                 case DayOfWeek.Thursday:
                 case DayOfWeek.Friday:
                     return "radni dan";
-                // TODO:062 Napisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
+                // :062 Napisati grane case tako da za svaki radni dan u tjednu vraća "radni dan", a za subotu i nedjelju vraća "vikend"
                 case DayOfWeek.Saturday:
                 case DayOfWeek.Sunday:
                     return "vikend";
 
-                // TODO:063 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
+                // :063 Za nepodržane vrijednosti treba baciti iznimku tipa ArgumentOutOfRangeException:
                 default:
                     throw new ArgumentOutOfRangeException();
             }
