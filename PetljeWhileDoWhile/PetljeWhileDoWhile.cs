@@ -48,6 +48,6 @@
             Console.WriteLine("GOTOVO!!!");
         }
 
-        // :093 Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
+        // 093 Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
     }
 }
