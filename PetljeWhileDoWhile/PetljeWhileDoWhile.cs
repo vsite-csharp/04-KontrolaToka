@@ -9,12 +9,12 @@
             int bačeniBroj = 0;
 
             // TODO:090 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
-
+            do
             {
                 ++brojBacanja;
                 bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"{brojBacanja}. pokušaj: {bačeniBroj}");
-            }
+            } while (bačeniBroj !=6);
 
             return brojBacanja;
         }
