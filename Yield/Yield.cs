@@ -69,11 +69,31 @@
         // TODO:132 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+                yield return 0;
+                yield return 1;
+            
+            int prethodni = 0;
+            int trenutni = 1;
+                while (prethodni < int.MaxValue)
+                {
+                    try
+                    {
+                        int zbroj = prethodni + trenutni;
+                        prethodni = trenutni;
+                        trenutni = zbroj;
+
+                    }
+                    catch (OverflowException)
+                    {
+                        yield break;
+                    }
+                    yield return trenutni;
+                }
         }
+    }
 
         // TODO:133 Pokrenuti program i provjeriti ispise
 
         // TODO:134 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
-}
+
