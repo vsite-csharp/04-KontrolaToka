@@ -89,8 +89,8 @@
                 {
                     yield break;
                 }
+                yield return trenutni;
             }
-            yield return trenutni;
         }
 
             //throw new NotImplementedException();
