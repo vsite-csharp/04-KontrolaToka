@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             Console.WriteLine("Kvadrati brojeva:");
-            // TODO:130 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
+            // DID_IT:130 Postaviti prekidnu točku (breakpoint) na 'in' u donjoj petlji foreach, pokrenuti program i nakon svakog prekida napraviti
+            // 'Step Into' (F11) i pratiti izvođenje metode DajKvadrat
             foreach (var kvadrat in DajKvadrate())
             {
                 Console.WriteLine(kvadrat);
@@ -47,26 +48,52 @@
 
             int prethodni = 0;
             int trenutni = 1;
-            while (prethodni < int.MaxValue / 2)
+            while (true)
             {
-                // TODO:131 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // DID_IT:131 Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
                 // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
-                int zbroj = prethodni + trenutni;
-                prethodni = trenutni;
-                trenutni = zbroj;
-                rezultat.Add(trenutni);
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                    rezultat.Add(trenutni);
+                }
+                catch (OverflowException e)
+                {
+                    Console.WriteLine(e.Message);
+                    break;
+                }
             }
             return rezultat;
         }
 
-        // TODO:132 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
+        // DID_IT:132 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
         public static IEnumerable<int> FibonacciIEnumerable()
         {
-            throw new NotImplementedException();
+            yield return 0;
+            yield return 1;
+
+            int prethodni = 0;
+            int trenutni = 1;
+            while (true)
+            {
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                }
+                catch (OverflowException e)
+                {
+                    yield break;
+                }
+                yield return trenutni;
+            }
         }
 
-        // TODO:133 Pokrenuti program i provjeriti ispise
+        // DID_IT:133 Pokrenuti program i provjeriti ispise
 
-        // TODO:134 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
+        // DID_IT:134 Pokrenuti testove i provjeriti prolaze li svi testovi iz grupe TestYield
     }
 }
