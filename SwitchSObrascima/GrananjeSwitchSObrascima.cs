@@ -68,7 +68,7 @@ namespace Vsite.CSharp.KontrolaToka
                 case 1:
                     Console.WriteLine($"{s.Ime} je brucoš");
                     break;
-                case <3:
+                case <=3:
                     Console.WriteLine($"{s.Ime} je student {s.Godina}. godine prediplomskog studija");
                     break;
                 case >3:
