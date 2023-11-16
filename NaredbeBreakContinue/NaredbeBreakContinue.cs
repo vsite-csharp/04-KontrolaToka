@@ -7,7 +7,11 @@
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:100 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                // DID_IT:100 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                if (i % d != 0)
+                {
+                    continue;
+                }
 
                 zbroj += i;
             }
@@ -19,10 +23,17 @@
             int zbroj = 0;
             for (int i = 1; i <= n; ++i)
             {
-                // TODO:101 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                // DID_IT:101 Ako i nije djeljiv s d, ne dodaje se (tj. treba se vratiti na početak petlje)
+                if (i % d != 0)
+                {
+                    continue;
+                }
 
-
-                // TODO:102 Ako je i djeljiv sa d2, tada treba prekinuti petlju
+                // DID_IT:102 Ako je i djeljiv sa d2, tada treba prekinuti petlju
+                if (i % d2 == 0)
+                {
+                    break;
+                }
 
 
                 zbroj += i;
@@ -30,7 +41,7 @@
             return zbroj;
         }
 
-        // TODO:103 Pokrenuti program i provjeriti ispise
+        // DID_IT:103 Pokrenuti program i provjeriti ispise
 
         static void Main(string[] args)
         {
@@ -43,6 +54,6 @@
 
             Console.WriteLine("GOTOVO!!!");
         }
-        // TODO:104 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
+        // DID_IT:104 Pokrenuti testove i provjeriti prolaze li svi testovi u grupi TestNaredbeBreakContinue
     }
 }
