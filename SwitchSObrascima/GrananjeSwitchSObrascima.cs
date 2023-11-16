@@ -87,7 +87,7 @@ namespace Vsite.CSharp.KontrolaToka
                     break;
                 // 074 Dodati case za objekt tipa Student koji koji će ispisati $"Student: {o.Ime}, {s.Godina}. godina". Pokrenuti program i provjeriti ispis.
                 
-                    // 075 Dodati case za objekt tipa Student koji je na godini većoj od 4 koji će ispisati $"Student: {o.Ime} je diplomirao". Pokrenuti program i provjeriti ispis.
+                // 075 Dodati case za objekt tipa Student koji je na godini većoj od 4 koji će ispisati $"Student: {o.Ime} je diplomirao". Pokrenuti program i provjeriti ispis.
 
             }
         }
