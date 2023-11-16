@@ -6,7 +6,7 @@
         {
             //:080 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
             for(int i=0; i<n; i++) {
-                Console.WriteLine(Value: i);
+                Console.WriteLine( i);
             }
         }
 
@@ -16,7 +16,7 @@
             int i = 0;
             while(i<=n)
             {
-                Console.WriteLine(Value: i);
+                Console.WriteLine( i);
                 i++;
             }
         }
