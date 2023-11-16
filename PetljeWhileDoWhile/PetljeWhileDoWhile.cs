@@ -8,13 +8,13 @@
             int brojBacanja = 0;
             int bačeniBroj = 0;
 
-            // TODO:090 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
+            // DID_IT:090 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
 
-            {
-                ++brojBacanja;
-                bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
-                Console.WriteLine($"{brojBacanja}. pokušaj: {bačeniBroj}");
-            }
+            do {
+                    ++brojBacanja;
+                    bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
+                    Console.WriteLine($"{brojBacanja}. pokušaj: {bačeniBroj}");
+            } while (bačeniBroj != 6);
 
             return brojBacanja;
         }
@@ -23,18 +23,20 @@
         {
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
 
-            // TODO:091 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
+            // DID_IT:091 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
 
+            while (brojPređenihPolja < 12)
             {
                 int bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"Bacanje: {bačeniBroj}");
                 brojPređenihPolja += bačeniBroj;
                 Console.WriteLine($"Ukupno: {brojPređenihPolja}");
-            }
+            } 
+
             return brojPređenihPolja;
         }
 
-        // TODO:092 Pokrenuti program nekoliko puta i provjeriti ispise
+        // DID_IT:092 Pokrenuti program nekoliko puta i provjeriti ispise
         static void Main()
         {
 
@@ -46,6 +48,6 @@
             Console.WriteLine("GOTOVO!!!");
         }
 
-        // TODO:093 Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
+        // DID_IT:093 Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
     }
 }
