@@ -8,13 +8,13 @@
             int brojBacanja = 0;
             int bačeniBroj = 0;
 
-            // TODO:090 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
-
+            // 090 Napisati petlju koja ispisuje rezultat bacanja sve dok ne padne na 6
+            do
             {
                 ++brojBacanja;
                 bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"{brojBacanja}. pokušaj: {bačeniBroj}");
-            }
+            } while (bačeniBroj != 6) ;
 
             return brojBacanja;
         }
@@ -23,8 +23,8 @@
         {
             Random generatorSlučajnih = new Random(); // generator slučajnih brojeva
 
-            // TODO:091 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
-
+            // 091 Napisati petlju koja se ponavlja sve dok brojPređenihPolja ne postane jednak ili veći od 12
+            while (brojPređenihPolja < 12)
             {
                 int bačeniBroj = generatorSlučajnih.Next(1, 7); // generira slučajni broj između 1 i 6
                 Console.WriteLine($"Bacanje: {bačeniBroj}");
@@ -34,7 +34,7 @@
             return brojPređenihPolja;
         }
 
-        // TODO:092 Pokrenuti program nekoliko puta i provjeriti ispise
+        // 092 Pokrenuti program nekoliko puta i provjeriti ispise
         static void Main()
         {
 
@@ -46,6 +46,6 @@
             Console.WriteLine("GOTOVO!!!");
         }
 
-        // TODO:093 Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
+        // 093 Pokrenuti testove i provjeriti prolaze li testovi u grupi TestPetljeWhileDoWhile
     }
 }
