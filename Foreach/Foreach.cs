@@ -7,7 +7,7 @@ namespace Vsite.CSharp.KontrolaToka
         public static void Ispiši(IEnumerable kolekcija)
         {
             // 110 Napisati foreach petlju tako da ispisuje sve članove kolekcije
-            foreach(var item in kolekcija)
+            foreach(object item in kolekcija)
             {
                 Console.WriteLine(item);
             }
