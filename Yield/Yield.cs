@@ -21,7 +21,7 @@
 
             Console.WriteLine();
             Console.WriteLine("Fibonaccijev niz pomoću yielda:");
-            var niz2 = FibonacciIEnumerable();
+            var niz2 = FibonacciList();
             foreach (var broj in niz2)
             {
                 Console.WriteLine(broj);
@@ -67,9 +67,29 @@
         }
 
         // TODO:132 Implementirajte donju metodu korištenjem koda gornje metode FibonacciList
-        public static IEnumerable<int> FibonacciIEnumerable()
+        public static IEnumerable<int> FibonacciEnumerable()
         {
-            throw new NotImplementedException();
+            yield return 0;
+            yield return 1;
+
+            int prethodni = 0;
+            int trenutni = 1;
+            while (prethodni < int.MaxValue / 2)
+            {
+                // Promijenite petlju tako da se unutar petlje provjerava je li donja operacija bacila OverflowException i u tom slučaju prekida petlju
+                // U postavkama projekta uključiti opciju za provjeru numeričkog preljeva i pokrenuti program.
+                try
+                {
+                    int zbroj = prethodni + trenutni;
+                    prethodni = trenutni;
+                    trenutni = zbroj;
+                }
+                catch (OverflowException)
+                {
+                    yield break;
+                }
+            }
+            yield return trenutni;
         }
 
         // Pokrenuti program i provjeriti ispise
