@@ -34,42 +34,52 @@
             Console.WriteLine();
 
             // korištenjem brojača ćemo (ipak) ograničiti broj ispisanih elemenata liste
-            //int brojač = 0;
-            //Console.WriteLine($"Niz pseudoslučajnih brojeva bez klice:");
-            //foreach (var broj in NizSlučajnihBrojeva())
-            //{
-            //    if (++brojač > granica)
-            //        break;
-            //    Console.WriteLine(broj);
-            //}
+            int brojač = 0;
+            Console.WriteLine($"Niz pseudoslučajnih brojeva bez klice:");
+            foreach (var broj in NizSlučajnihBrojeva())
+            {
+                if (++brojač > granica)
+                    break;
+                Console.WriteLine(broj);
+            }
 
             Console.WriteLine();
 
-            //brojač = 0;
+            brojač = 0;
             //Console.WriteLine($"Niz pseudoslučajnih brojeva s klicom: {klica}");
-            //foreach (var broj in NizSlučajnihBrojeva(klica))
-            //{
-            //    if (++brojač > granica)
-            //        break;
-            //    Console.WriteLine(broj);
-            //}
+            foreach (var broj in NizSlučajnihBrojeva(klica))
+            {
+                if (++brojač > granica)
+                    break;
+                Console.WriteLine(broj);
+            }
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey();
         }
 
-        // TODO:130 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva. 
+        // :130 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva. 
         //          Otkomentirati prvu petlju gore i provjeriti ispravnost implementacije.
         public static IEnumerable<double> NizSlučajnihBrojeva()
         {
-            throw new NotImplementedException();
+            Random slučajni = new Random();
+
+            while (true)
+            {
+                yield return slučajni.NextDouble();
+            }
         }
 
-        // TODO:131 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva uz zadanu početnu klicu.
+        // :131 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva uz zadanu početnu klicu.
         //          Otkomentirati drugu petlju gore i provjeriti ispravnost implementacije.
         public static IEnumerable<double> NizSlučajnihBrojeva(int klica)
         {
-            throw new NotImplementedException();
+            Random slučajni = new Random(klica);
+
+            while (true)
+            {
+                yield return slučajni.NextDouble();
+            }
         }
     }
 }
