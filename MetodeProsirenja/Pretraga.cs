@@ -8,7 +8,7 @@ namespace Vsite.CSharp.KontrolaToka
         {
             // 120 Napisati kod koji će vratiti true ako nizRiječi sadrži riječ tražena, a u protivnom vraća false
             // (za jednostavnije rješenje, pogledati https://docs.microsoft.com/en-us/dotnet/api/system.linq.enumerable)
-            return nizRiječi.Contains("tražena");
+            return nizRiječi.Contains(tražena);
             //foreach(var rijec in nizRiječi)
             //{
             //    if (rijec = "tražena")
@@ -17,7 +17,7 @@ namespace Vsite.CSharp.KontrolaToka
             //    }
             //}
             //return false;
-            throw new NotImplementedException();
+
         }
 
         public static int Zbroj(IEnumerable<int> brojevi)
