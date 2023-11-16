@@ -5,7 +5,7 @@
         public static void PetljaFor(int n)
         {
             // 080 Napisati petlju for koja će ispisati brojeve od 0 do (uključivo) n
-            for(int i = 0; i < n; i++)
+            for(int i = 0; i <= n; i++)
             {
                 Console.WriteLine(n);
             }
@@ -15,7 +15,7 @@
         {
             // 081 Napisati petlju while koja će ispisati brojeve od 0 do (uključivo) n
             int i = 0;
-            while(i < n)
+            while(i <= n)
             {
                 Console.WriteLine(i);
                 i++;
