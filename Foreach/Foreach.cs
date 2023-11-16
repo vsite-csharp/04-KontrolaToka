@@ -6,11 +6,15 @@ namespace Vsite.CSharp.KontrolaToka
     {
         public static void Ispiši(IEnumerable kolekcija)
         {
-            // TODO:110 Napisati foreach petlju tako da ispisuje sve članove kolekcije
+            // 110 Napisati foreach petlju tako da ispisuje sve članove kolekcije
+            foreach (object obj in kolekcija)
+            {
+                Console.WriteLine(obj);
+            }
 
         }
 
-        // TODO:111 Pokrenuti program i provjeriti ispise
+        // :111 Pokrenuti program i provjeriti ispise
 
         public static void Main(string[] args)
         {
@@ -25,6 +29,6 @@ namespace Vsite.CSharp.KontrolaToka
 
             Console.WriteLine("GOTOVO!!!");
         }
-        // TODO:112 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
+        // :112 Pokrenuti testove i provjeriti prolaze li oba testa u grupi TestForeach
     }
 }
