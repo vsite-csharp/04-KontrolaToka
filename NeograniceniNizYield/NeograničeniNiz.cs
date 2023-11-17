@@ -37,8 +37,14 @@
 
             Console.WriteLine();
 
-            // korištenjem brojača ćemo (ipak) ograničiti broj ispisanih elemenata liste
+            //korištenjem brojača ćemo(ipak) ograničiti broj ispisanih elemenata liste
             //int brojač = 0;
+            //Console.WriteLine($"Niz pseudoslučajnih brojeva bez klice:");
+            //foreach (var broj in NizSlučajnihBrojeva())
+            //{
+            //    if (++brojač > granica)
+            //        break;
+            //    Console.WriteLine(broj);int brojač = 0;
             //Console.WriteLine($"Niz pseudoslučajnih brojeva bez klice:");
             //foreach (var broj in NizSlučajnihBrojeva())
             //{
@@ -47,7 +53,10 @@
             //    Console.WriteLine(broj);
             //}
 
-            Console.WriteLine();
+
+            //}
+
+            //Console.WriteLine();
 
             //brojač = 0;
             //Console.WriteLine($"Niz pseudoslučajnih brojeva s klicom: {klica}");
@@ -58,17 +67,17 @@
             //    Console.WriteLine(broj);
             //}
 
-            Console.WriteLine("GOTOVO!!!");
+            //Console.WriteLine("GOTOVO!!!");
         }
 
-        // TODO:140 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva. 
+        // 140 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva. 
         //          Otkomentirati prvu petlju gore i provjeriti ispravnost implementacije.
         public static IEnumerable<double> NizSlučajnihBrojeva()
         {
             throw new NotImplementedException();
         }
 
-        // TODO:141 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva uz zadanu početnu klicu.
+        // 141 Implementirati metodu tako da omogućava vraćanje beskonačnog niza slučajnih brojeva uz zadanu početnu klicu.
         //          Otkomentirati drugu petlju gore i provjeriti ispravnost implementacije.
         public static IEnumerable<double> NizSlučajnihBrojeva(int klica)
         {
